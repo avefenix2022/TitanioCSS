@@ -1,33 +1,81 @@
 /*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/29/2014
+* 
+* Titanio.css Ligero y Resistente.
+*
+* Basado en: 
+* Skeleton V2.0.4 www.getskeleton.com
+* cssguidelin http://cssguidelin.es/
+*
 */
 
 
-/* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-- Grid
-- Base Styles
-- Typography
-- Links
-- Buttons
-- Forms
-- Lists
-- Code
-- Tables
-- Spacing
-- Utilities
-- Clearing
-- Media Queries
-*/
+
+/**
+ 
+* TABLA DE CONTENIDO
+*
+* AJUSTES
+* Global ................. Variables y configuraciones disponibles Globalmente.
+* Tipografías
+* Estilos Base
+*
+* HERRAMIENTAS
+* Mixins ................. Mixins útiles.
+*
+* GENÉRICO
+* Normalize.css .......... Normalize.
+* Box-sizing ............. Box-sizing.
+*
+* BASE
+* Encabezamientos ........ H1-H6.
+*
+* OBJETOS
+* Contenedores ........... Contenedores.
+* Grid ................... Regilla de maquetación de 12 columnas
+*
+* COMPONENTES
+* Cabecera de las Página . Encabezado principal de la página.
+* Pies de las Página ..... El pie de página.
+* Botones ................ Elementos Button.
+* Links .................. Etiquetas a.
+* Forms .................. Formularios.
+* Lists .................. Listas ordenadas y no ordenadas.
+* Code ................... Etiqueta pre y code.
+* Tables ................. Estilos de tablas.
+* Spacing ................ Separaciones y espacios.
+* Utilities .............. Diferentes utilidades.
+* Clearing ............... Para limpiar float.
+* 
+* MEDIA QUERIES
+*
+* Para menores de 400px 
+* ...
+*
+* Mayor que Móviles de 400px 
+* @media (min-width: 400px) {}
+*
+* Mayor que Phablet de 550px (También el punto cuando empieza a activarse el grid) 
+* @media (min-width: 550px) {}
+*
+* Mayor que Tablet 
+* @media (min-width: 750px) {}
+*
+* Mayor que Ordenador 
+* @media (min-width: 1000px) {}
+*
+* Mayor que Ordenadorp HD 
+* @media (min-width: 1200px) {}
+
+**/
 
 
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/*-------------------------------------*\ 
+    #Grid
+\*–––––––––––––––––––––––––––––––––––– */
+
 .container {
   position: relative;
   width: 100%;
