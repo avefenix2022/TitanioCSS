@@ -6,7 +6,7 @@
     height:                100vh;
     width:                 100%;
     
-    background-image:      url("https://source.unsplash.com/" + $unsplash + "/1600x900");
+    background-image:      url("https://source.unsplash.com/" + $unsplash + "/4853x2730");
     background-repeat:     no-repeat;
     background-position:   center;
     background-size:       cover;
@@ -33,6 +33,6 @@
 
 .cover {
     
-    @include bg_unsplash_fijo_escroll (UqyHjOgYxYY, scroll);
+    @include bg_unsplash_fijo_escroll (UhagOo7IOyc, scroll);
     @include centrar_contenido (#fff);
 }
