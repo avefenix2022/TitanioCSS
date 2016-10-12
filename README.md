@@ -1,4 +1,5 @@
 # Nuestro Framework Titanio CSS
+Sitio Web: [http://titanio.azurewebsites.net/)](http://titanio.azurewebsites.net/)
 
 Nos basamos en el framework Skeleton: [getskeleton.com](http://getskeleton.com). Con una anchura para el contenido de **960px**.
 
@@ -48,14 +49,41 @@ Es una buena idea dividir trozos discretos de código css en archivos independie
 Una tabla de contenidos marca un esqueleto sobre el que apoyar la estructura del documento.
 
 <pre>         
-/**
+/*
+* 
+* Titanio.css Ligero y Resistente.
+*
+* Basado en: 
+* Skeleton V2.0.4 www.getskeleton.com
+* cssguidelin http://cssguidelin.es/
+*
+*/
 
+
+
+/**
+ 
 * TABLA DE CONTENIDO
 *
+* GRID
+* Grid ................... Regilla de maquetación de 12 columnas.
+*/
+  @import "grid";
+/*
+
 * AJUSTES
 * Global ................. Variables y configuraciones disponibles Globalmente.
 * Tipografías
 * Estilos Base
+*/
+  @import "estilos-base";
+/*
+*
+* BASE
+* Encabezamientos ........ H1-H6.
+*/
+  @import "tipografia";
+/*
 *
 * HERRAMIENTAS
 * Mixins ................. Mixins útiles.
@@ -64,65 +92,93 @@ Una tabla de contenidos marca un esqueleto sobre el que apoyar la estructura del
 * Normalize.css .......... Normalize.
 * Box-sizing ............. Box-sizing.
 *
-* BASE
-* Encabezamientos ........ H1-H6.
+
 *
 * OBJETOS
 * Contenedores ........... Contenedores.
-* Grid ................... Regilla de maquetación de 12 columnas
+
 *
 * COMPONENTES
 * Cabecera de las Página . Encabezado principal de la página.
 * Pies de las Página ..... El pie de página.
 * Botones ................ Elementos Button.
+*/
+  @import "botones";
+/*
 * Links .................. Etiquetas a.
+*/
+  @import "links";
+/*
 * Forms .................. Formularios.
+*/
+  @import "forms";
+/*
 * Lists .................. Listas ordenadas y no ordenadas.
+*/
+  @import "lists";
+/*
 * Code ................... Etiqueta pre y code.
+*/
+  @import "code";
+/*
 * Tables ................. Estilos de tablas.
+*/
+  @import "tables";
+/*
 * Spacing ................ Separaciones y espacios.
+*/
+  @import "spacing";
+/*
 * Utilities .............. Diferentes utilidades.
+*/
+  @import "utilities";
+/*
+* misc ................... hr.
+*/
+  @import "misc";
+/*
 * Clearing ............... Para limpiar float.
+*/
+  @import "clearing";
+/*
 * 
 * MEDIA QUERIES
 *
-* Para menores de 400px */
+* Para interfaces menores de 400px de ancho 
 * ...
 *
-* Mayor que Móviles de 400px */
+* Mayor que 400px 
 * @media (min-width: 400px) {}
 *
-* Mayor que Phablet de 550px (También el punto cuando empieza a activarse el grid) */
+* Mayor que 550px (También el punto cuando empieza a activarse el grid) 
 * @media (min-width: 550px) {}
 *
-* Mayor que Tablet */
+* Mayor que Tablet 
 * @media (min-width: 750px) {}
 *
-* Mayor que Ordenador */
+* Mayor que Ordenador 
 * @media (min-width: 1000px) {}
 *
-* Mayor que Ordenadorp HD */
+* Mayor que Ordenadorp HD 
 * @media (min-width: 1200px) {}
 
-**/
-     </pre>
-
-## Ancho de 80 caracteres
-
-Siempre que sea posible, la anchura de los archivos css se limitará a 80 caracteres. Las razones para esto incluyen:
-
-*   Capacidad para abrir varios documentos uno al lado del otro.
-*   Visualizar los archivos css en sitios como GitHub y ventanas de terminal.
-*   Proporcionar una longitud de línea cómoda para comentarios.
-
-<pre>         
-/ **
-* Este es el tamaño de un comentario con una longitud de 80 catacteres de ancho.
+*/
+  @import "media-queries";
+/*
 *
-* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dignissimos 
-* facilis eveniet, incidunt voluptatem sit soluta maiores qui ducimus blanditiis
-* impedit autem dolorum, cum veritatis ratione ut. Debitis, hic repellendus.
-** /
+*
+*
+*
+*
+*
+*
+* PARA MAQUETAR
+* Outline ................ Borde outline alrrededor de todos los elementos
+*/
+  @import "outline";
+/*
+*
+**/
      </pre>
 
 ## Títulos
