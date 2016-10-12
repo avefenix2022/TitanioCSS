@@ -417,13 +417,13 @@ Por ejemplo:
 
 Con los **atributos**:
 
-* Al escribir varios valores en un atributo de clase, hay que separarlos con **dos (2)** espacios:
+* Al escribir varios valores en un atributo de clase, hay que separarlos con **dos (2)** espacios.
 
-* Cuando hay **varias clases que están relacionadas entre sí, podrá agruparlas entre corchetes ([ y ])**, así:
+* Cuando hay **varias clases que están relacionadas entre sí, podrá agruparlas entre corchetes ([ y ])**.
 
-* Al igual que con nuestros conjuntos de reglas CSS, es posible utilizar los espacios en blanco de forma significativa en el código HTML. Puede denotar **descansos temáticos en el contenido** con **cinco (5)** líneas vacías, por ejemplo:
+* Al igual que con nuestros conjuntos de reglas CSS, es posible utilizar los espacios en blanco de forma significativa en el código HTML. Puede denotar **descansos temáticos en el contenido** con **cinco (5)** líneas vacías.
 
-* Para **fragmentos independientes**, pero vagamente relacionados el marcado es con **una sola línea** en blanco, por ejemplo:
+* Para **fragmentos independientes**, pero vagamente relacionados el marcado es con **una sola línea** en blanco.
 
 * Esto permite a los desarrolladores detectar **partes separadas del DOM de un vistazo**.
 
