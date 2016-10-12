@@ -1,6 +1,19 @@
 # Nuestro Framework Titanio CSS
 Sitio Web: [http://titanio.azurewebsites.net/)](http://titanio.azurewebsites.net/)
 
+La Aplicación Web esta hospedada en Azure y está implementada continua desde este repositorio de GitHub como servicio de control del código fuente.
+
+Las ventajas de la implementación desde un servicio de control de código fuente basado en la nube son las siguientes:
+
+* Control de versiones para habilitar la reversión.
+* Capacidad para configurar la implementación continua de repositorios Git (y Mercurial, cuando corresponda).
+* Implementación específica de ramas, se pueden implementar ramas diferentes en ranuras distintas.
+* Toda la funcionalidad del motor de implementación de Kudu está disponible (por ejemplo, control de versiones de implementación, reversión, restauración de paquetes, automatización).
+
+La implementación continua representa una buena opción para los proyectos donde se integran contribuciones diversas y frecuentes.
+
+Se crea una asociación con el repositorio, se extraen los archivos de la rama master y se mantiene un clon del repositorio para la aplicación. Al configurar la implementación continua de VSTS desde el Portal de Azure, la integración usa el motor de implementación de **Kudu**, que ya automatiza las tareas de compilación e implementación con cada **git push**.
+
 Nos basamos en el framework Skeleton: [getskeleton.com](http://getskeleton.com). Con una anchura para el contenido de **960px**.
 
 Por media queries:
