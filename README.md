@@ -1,7 +1,7 @@
 # Nuestro Framework Titanio CSS
 Sitio Web: [http://titanio.azurewebsites.net/)](http://titanio.azurewebsites.net/)
 
-La Aplicación Web esta hospedada en Azure y está implementada continua desde este repositorio de GitHub como servicio de control del código fuente.
+La Aplicación Web esta hospedada en Azure y está implementada de forma continua desde este repositorio de GitHub como servicio de control del código fuente.
 
 Las ventajas de la implementación desde un servicio de control de código fuente basado en la nube son las siguientes:
 
