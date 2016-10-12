@@ -638,10 +638,7 @@ there.
 * PARA MAQUETAR
 * Outline ................ Borde outline alrrededor de todos los elementos
 */
-* {
-  outline: 1px solid red;
-}
-
+/* @import "outline"; */
 /*
 *
 **/

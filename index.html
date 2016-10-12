@@ -36,54 +36,63 @@
 <body>
 
 
-<!-- --- CONTAINER–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+
+
+
+  <div class="cover">
+      
+      <h1 class="color-salmon">Titanio.css</h1>
+      <h2 class="color-esmeralda">Ligero y Resistente</h2>
+      
+  </div>
   
-<!-- --- ROW --------------------------------------------------------------- -->  
-    <div class="row">
-     
-<!-- --- COLUMNA IZQUIERDA ------------------------------------------------- -->     
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Rápido y Ligero</h4>
-        <p>14 Reglas x Web Sites de Carga Veloz</p>
-        <ul>
-            <li>Mínimas peticiones Http</li>
-            <li>Usar CDNs</li>
-            <li>Añadir caducidad al encabezado</li>
-            <li>Gzip componentes</li>
-            <li>Poner las hojas de estilo en el header</li>
-            <li>Mover los scripts al final del archivo</li>
-            <li>Evitar expresiones Css</li>
-            <li>Hacer Js y Css externos</li>
-            <li>Reducir CDNs</li>
-            <li>Minificar Js</li>
-            <li>Evitar redirecciones</li>
-            <li>Eliminar scripts duplicados</li>
-            <li>Configurar ETags</li>
-            <li>Hacer AJAX cacheable</li>
-        </ul>
-        </div><!-- --- FIN COLUMNA IZQUIERDA ------------------------------- --> 
 
 
 
-
-
-    
- <!-- --- COLUMNA DERECHA -------------------------------------------------- -->       
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div><!-- --- FIN COLUMNA DERECHA ----------------------------------- -->  
-         
-    </div><!-- --- FIN ROW ------------------------------------------------- --> 
-    
-    
-    
+<!-- --- CONTAINER–––––––––––––––––––––––––––––––––––--------––––––––––––––– -->
+  <div class="container">
+        
 <!-- --- ROW --------------------------------------------------------------- -->    
-      <div class="row">
+<div class="row">
+      <div class="twelve column" style="margin-top: 8rem">
+       
+        <h1 class="color-salmon">Proyecto Titanio CSS</h1>
+
+        <p>La Aplicación Web esta hospedada en <strong>Azure</strong> y está <strong>implementada de forma continua desde este repositorio de <a href="https://github.com/franciscomarinas/adatabuy">GitHub</a></strong> como servicio de control del código fuente.</p>
+
+<p>Las ventajas de la implementación desde un servicio de control de código fuente basado en la nube son las siguientes:</p>
+
+<ul>
+    <li>Control de versiones para habilitar la reversión.</li>
+    <li>Capacidad para configurar la implementación continua de repositorios Git.</li>
+    <li>Implementación específica de ramas, se pueden implementar ramas diferentes en ranuras distintas.
+Toda la funcionalidad del motor de implementación de Kudu está disponible (por ejemplo, control de versiones de implementación, reversión, restauración de paquetes, automatización).</li>
+    <li>La implementación continua representa una buena opción para los proyectos donde se integran contribuciones diversas y frecuentes.</li>
+</ul>
+
+<P>Se crea una asociación con el repositorio, se extraen los archivos de la rama master y se mantiene un clon del repositorio para la aplicación. Al configurar la implementación continua de VSTS desde el Portal de Azure, la integración usa el motor de implementación de Kudu, que ya automatiza las tareas de compilación e implementación con cada git push.</P>
+
+        
+      </div>
+      
+   
+    </div><!-- --- FIN ROW ------------------------------------------------- -->   
+</div>
+  <!-- --- FIN CONTAINER---------------------------------------------- -->
+  
+  
+  
+  
+  
+<!-- --- CONTAINER–––––––––––––––––––––––––––––––––––--------––––––––––––––– -->
+  <div class="container">
+        
+<!-- --- ROW --------------------------------------------------------------- -->    
+<div class="row">
       <div class="twelve column" style="margin-top: 8rem">
        
         <h1 class="color-salmon">Nuestro Framework Titanio CSS</h1>
+
         <p>Nos basamos en el framework Skeleton: <a href="http://getskeleton.com">getskeleton.com</a>. Con una anchura para el contenido de <strong>960px</strong>.</p> 
         <br>Por media queries:
         <ul>
@@ -96,28 +105,11 @@
       </div>
       
    
-    </div><!-- --- FIN ROW ------------------------------------------------- -->  
-    
-    
-  </div><!-- --- FIN CONTAINER---------------------------------------------- -->
+    </div><!-- --- FIN ROW ------------------------------------------------- -->   
+</div>
+  <!-- --- FIN CONTAINER---------------------------------------------- -->
   
-  
-  
-  
-  
-  
-  
-  
-  <div class="cover">
-      
-      <h1 class="color-salmon">Titanio.css</h1>
-      <h2 class="color-esmeralda">Ligero y Resistente</h2>
-      
-  </div>
-  
-  
-  
-  
+
    
     
      
@@ -338,7 +330,7 @@
       
 [selector] {
     [propiedad]: [valor];
-    [<--declaracion--->]
+    [----declaración---]
 }
       </pre>
       
@@ -1142,13 +1134,9 @@ ul.nav {}
             <li></li>
         </ul>
         
-      </div>
-      
-   
-      
-    </div> 
-  
-    </div>
+</div>
+</div>   
+</div>
   
   
   
@@ -1177,7 +1165,38 @@ ul.nav {}
 
 
 
-
+<!-- --- CONTAINER–––––––––––––––––––––––––––––––––––--------––––––––––––––– -->
+  <div class="container">
+  
+<!-- --- ROW --------------------------------------------------------------- -->  
+<div class="row">
+     
+<!-- --- COLUMNA ----------------------------------------------------------- -->     
+      <div class="twelve column" style="margin-top: 25%">
+        <h4>Rápido y Ligero</h4>
+        <p>14 Reglas x Web Sites de Carga Veloz</p>
+        <ul>
+            <li>Mínimas peticiones Http</li>
+            <li>Usar CDNs</li>
+            <li>Añadir caducidad al encabezado</li>
+            <li>Gzip componentes</li>
+            <li>Poner las hojas de estilo en el header</li>
+            <li>Mover los scripts al final del archivo</li>
+            <li>Evitar expresiones Css</li>
+            <li>Hacer Js y Css externos</li>
+            <li>Reducir CDNs</li>
+            <li>Minificar Js</li>
+            <li>Evitar redirecciones</li>
+            <li>Eliminar scripts duplicados</li>
+            <li>Configurar ETags</li>
+            <li>Hacer AJAX cacheable</li>
+        </ul>
+        </div><!-- --- FIN COLUMNA  ---------------------------------------- --> 
+ 
+    </div><!-- --- FIN ROW ------------------------------------------------- --> 
+        
+</div>
+  <!-- --- FIN CONTAINER---------------------------------------------- -->
 
 
 
