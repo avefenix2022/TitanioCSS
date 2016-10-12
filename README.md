@@ -173,7 +173,7 @@ Una tabla de contenidos marca un esqueleto sobre el que apoyar la estructura del
 *
 *
 * PARA MAQUETAR
-* Outline ................ Borde outline alrrededor de todos los elementos
+* Outline ................ Borde outline alrededor de todos los elementos
 */
   @import "outline";
 /*
