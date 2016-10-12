@@ -39,44 +39,43 @@
 
 
 
-  <div class="cover">
+<div class="cover">
       
-      <h1 class="color-salmon">Titanio.css</h1>
-      <h2 class="color-esmeralda">Ligero y Resistente</h2>
+    <h1 class="color-salmon">Titanio.css</h1>
+    <h2 class="color-esmeralda">Ligero y Resistente</h2>
       
-  </div>
+</div>
   
 
 
 
+
 <!-- --- CONTAINER–––––––––––––––––––––––––––––––––––--------––––––––––––––– -->
-  <div class="container">
+<div class="container">
         
 <!-- --- ROW --------------------------------------------------------------- -->    
 <div class="row">
-      <div class="twelve column" style="margin-top: 8rem">
+    <div class="twelve column" style="margin-top: 8rem">
        
-        <h1 class="color-salmon">Proyecto Titanio CSS</h1>
+    <h1 class="color-salmon">Proyecto Titanio CSS</h1>
 
-        <p>La Aplicación Web esta hospedada en <strong>Azure</strong> y está <strong>implementada de forma continua desde este repositorio de <a href="https://github.com/franciscomarinas/adatabuy">GitHub</a></strong> como servicio de control del código fuente.</p>
+    <p>La Aplicación Web esta hospedada en <strong>Azure</strong> y está <strong>implementada de forma continua desde el repositorio <a href="https://github.com/franciscomarinas/adatabuy">GitHub</a></strong> como <strong>servicio de control del código fuente</strong>.</p>
 
-<p>Las ventajas de la implementación desde un servicio de control de código fuente basado en la nube son las siguientes:</p>
+    <p>Las <strong>ventajas de la implementación desde un servicio de control de código</strong> fuente basado en la nube son las siguientes:</p>
 
-<ul>
-    <li>Control de versiones para habilitar la reversión.</li>
-    <li>Capacidad para configurar la implementación continua de repositorios Git.</li>
-    <li>Implementación específica de ramas, se pueden implementar ramas diferentes en ranuras distintas.
-Toda la funcionalidad del motor de implementación de Kudu está disponible (por ejemplo, control de versiones de implementación, reversión, restauración de paquetes, automatización).</li>
-    <li>La implementación continua representa una buena opción para los proyectos donde se integran contribuciones diversas y frecuentes.</li>
-</ul>
+    <ul>
+        <li>Control de versiones para habilitar la <strong>reversión</strong>.</li>
+        <li>Capacidad para configurar la <strong>implementación continua</strong> de repositorios Git.</li>
+        <li>Implementación específica de ramas, se pueden implementar ramas diferentes en aplicaiones distintas.<br>
+        Toda la funcionalidad del motor de implementación de <strong>Kudu</strong> está disponible (por ejemplo, control de versiones de implementación, reversión, restauración de paquetes, automatización).</li>
+        <li>La implementación continua representa una buena opción para los <strong>proyectos donde se integran contribuciones diversas y frecuentes</strong>.</li>
+    </ul>
 
-<P>Se crea una asociación con el repositorio, se extraen los archivos de la rama master y se mantiene un clon del repositorio para la aplicación. Al configurar la implementación continua de VSTS desde el Portal de Azure, la integración usa el motor de implementación de Kudu, que ya automatiza las tareas de compilación e implementación con cada git push.</P>
-
-        
-      </div>
+    <P>Se crea una asociación con el repositorio, se extraen los archivos de la rama master y se mantiene un clon del repositorio para la aplicación. Al configurar la implementación continua de VSTS desde el Portal de Azure, la integración usa el motor de implementación de <strong>Kudu</strong>, que ya automatiza las tareas de compilación e implementación con cada <strong>git push</strong>.</P>
+  
+    </div>
       
-   
-    </div><!-- --- FIN ROW ------------------------------------------------- -->   
+</div><!-- --- FIN ROW ------------------------------------------------- -->   
 </div>
   <!-- --- FIN CONTAINER---------------------------------------------- -->
   
@@ -89,23 +88,47 @@ Toda la funcionalidad del motor de implementación de Kudu está disponible (por
         
 <!-- --- ROW --------------------------------------------------------------- -->    
 <div class="row">
-      <div class="twelve column" style="margin-top: 8rem">
+    <div class="twelve column" style="margin-top: 8rem">
        
-        <h1 class="color-salmon">Nuestro Framework Titanio CSS</h1>
+    <h1 class="color-salmon">Nuestro Framework Titanio CSS</h1>
 
-        <p>Nos basamos en el framework Skeleton: <a href="http://getskeleton.com">getskeleton.com</a>. Con una anchura para el contenido de <strong>960px</strong>.</p> 
-        <br>Por media queries:
-        <ul>
-            <li>por debajo de <strong>550px</strong> se apila el contenido, con una anchura del contenido del <strong>100%</strong>,</li>
-            <li>entre <strong>400 y 500px</strong> esta anchura es del <strong>85%</strong> ,</li>
-            <li>y por encima de los <strong>550px</strong> del <strong>80%</strong>.</li>
-        </ul>
-         
-        
-      </div>
-      
+    <p>Nos basamos en el framework Skeleton: <a href="http://getskeleton.com">getskeleton.com</a>. Con una anchura para el contenido de <strong>960px</strong>.</p> 
+    <br>Por media queries:
+    <ul>
+        <li>por debajo de <strong>550px</strong> se apila el contenido, con una anchura del contenido del <strong>100%</strong>,</li>
+        <li>entre <strong>400 y 500px</strong> esta anchura es del <strong>85%</strong> ,</li>
+        <li>y por encima de los <strong>550px</strong> del <strong>80%</strong>.</li>
+    </ul>
+    
+    <p>Utilizamos SCSS como preprocesador CSS, <strong>separamos el SCSS</strong> en: </p>
+    <ul>
+        <li>grid</li>
+        <li>estilos-base</li>
+        <li>tipografia</li>
+        <li>botones</li>
+        <li>links</li>
+        <li>forms</li>
+        <li>lists</li>
+        <li>code</li>
+        <li>tables</li>
+        <li>spacing</li>
+        <li>utilities</li>
+        <li>misc</li>
+        <li>clearing</li>
+        <li>media-queries</li>
+    </ul>
+    
+    <ul>
+        <li>color</li>
+        <li>cover</li>
+    </ul>
+    
+    
    
-    </div><!-- --- FIN ROW ------------------------------------------------- -->   
+                
+    </div>
+      
+</div><!-- --- FIN ROW ------------------------------------------------- -->   
 </div>
   <!-- --- FIN CONTAINER---------------------------------------------- -->
   
@@ -130,7 +153,7 @@ Toda la funcionalidad del motor de implementación de Kudu está disponible (por
         <li>aplicar siempre</li>
     </ul>
      <p>y cualquier desviación debe ser justificada.</p>
-    <p><small>(Basada en <a href="http://cssguidelin.es/">http://cssguidelin.es/)</a></small></p>
+    <p><small>(Basado en <a href="http://cssguidelin.es/">http://cssguidelin.es/)</a></small></p>
      
       
       
