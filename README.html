@@ -1,5 +1,5 @@
 <h1 id="proyecto-titanio-css">Proyecto Titanio CSS</h1>
-<p>La Aplicación Web esta hospedada en <strong>Azure</strong> y está <strong>implementada de forma continua desde el repositorio <a href="https://github.com/franciscomarinas/adatabuy">GitHub</a></strong> como <strong>servicio de control del código fuente</strong>.</p>
+<p>La Aplicación Web está hospedada en <strong>Azure</strong> y está <strong>implementada de forma continua desde el repositorio <a href="https://github.com/franciscomarinas/adatabuy">GitHub</a></strong> como <strong>servicio de control del código fuente</strong>.</p>
 <p>Las <strong>ventajas de la implementación desde un servicio de control de código</strong> fuente basado en la nube son las siguientes:</p>
 <ul>
 <li>Control de versiones para habilitar la <strong>reversión</strong>.</li>
@@ -375,62 +375,18 @@
 
 <h2 id="marcado-html">Marcado HTML</h2>
 <p>Con los <strong>atributos</strong>:</p>
-<pre>        
-<div class="box">
-      </pre>
-
-<p>Al escribir varios valores en un atributo de clase, hay que separarlos con <strong>dos (2)</strong> espacios:</p>
-<pre>        
-<div class="foo  bar">
-      </pre>
-
-<p>Cuando hay <strong>varias clases que están relacionadas entre sí, podrá agruparlas entre corchetes ([ y ])</strong>, así:</p>
-<pre>          
-<div class="[ box  box--highlight ]  [ bio  bio--long ]">
-      </pre>
-
-<p><a href="http://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/">Leer más+</a></p>
-<p>Al igual que con nuestros conjuntos de reglas CSS, es posible utilizar los espacios en blanco de forma significativa en el código HTML. Puede denotar <strong>descansos temáticos en el contenido</strong> con <strong>cinco (5)</strong> líneas vacías, por ejemplo:</p>
-<pre>         
-<header class="page-head">
-    ...
-</header>
-
-<main class="page-content">
-    ...
-</main>
-
-<footer class="page-foot">
-    ...
-</footer>
-      </pre>
-
-<p>Para <strong>fragmentos independientes</strong>, pero vagamente relacionados el marcado es con <strong>una sola línea</strong> en blanco, por ejemplo:</p>
-<pre>          
-<ul class="primary-nav">
-
-    <li class="primary-nav__item">
-        <a href="/" class="primary-nav__link">Home</a>
-    </li>
-
-    <li class="primary-nav__item  primary-nav__trigger">
-        <a href="/about" class="primary-nav__link">About</a>
-
-        <ul class="primary-nav__sub-nav">
-            <li><a href="/about/products">Products</a></li>
-            <li><a href="/about/company">Company</a></li>
-        </ul>
-
-    </li>
-
-    <li class="primary-nav__item">
-        <a href="/contact" class="primary-nav__link">Contact</a>
-    </li>
-
+<ul>
+<li><p>Al escribir varios valores en un atributo de clase, hay que separarlos con <strong>dos (2)</strong> espacios:</p>
+</li>
+<li><p>Cuando hay <strong>varias clases que están relacionadas entre sí, podrá agruparlas entre corchetes ([ y ])</strong>, así:</p>
+</li>
+<li><p>Al igual que con nuestros conjuntos de reglas CSS, es posible utilizar los espacios en blanco de forma significativa en el código HTML. Puede denotar <strong>descansos temáticos en el contenido</strong> con <strong>cinco (5)</strong> líneas vacías, por ejemplo:</p>
+</li>
+<li><p>Para <strong>fragmentos independientes</strong>, pero vagamente relacionados el marcado es con <strong>una sola línea</strong> en blanco, por ejemplo:</p>
+</li>
+<li><p>Esto permite a los desarrolladores detectar <strong>partes separadas del DOM de un vistazo</strong>.</p>
+</li>
 </ul>
-      </pre>
-
-<p>Esto permite a los desarrolladores detectar <strong>partes separadas del DOM de un vistazo</strong>.</p>
 <h2 id="comentarios">Comentarios</h2>
 <p>La sobrecarga cognitiva de trabajar con CSS es enorme. Con tantos matices que dificulta ser consciente de todos, y más de los específicos de cada proyecto, la peor situación que la mayoría de los desarrolladores se encuentran es que no son la persona que escribió el código. Estas pueden recordar sus propias clases, reglas,... que es manejable hasta cierto punto, pero cualquier persona que hereda CSS apenas tiene posibilidades.</p>
 <p>El CSS necesita más comentarios.</p>

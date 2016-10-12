@@ -1,6 +1,6 @@
 # Proyecto Titanio CSS
 
-La Aplicación Web esta hospedada en **Azure** y está **implementada de forma continua desde el repositorio [GitHub](https://github.com/franciscomarinas/adatabuy)** como **servicio de control del código fuente**.
+La Aplicación Web está hospedada en **Azure** y está **implementada de forma continua desde el repositorio [GitHub](https://github.com/franciscomarinas/adatabuy)** como **servicio de control del código fuente**.
 
 Las **ventajas de la implementación desde un servicio de control de código** fuente basado en la nube son las siguientes:
 
@@ -417,67 +417,15 @@ Por ejemplo:
 
 Con los **atributos**:
 
-<pre>        
-<div class="box">
-      </pre>
+* Al escribir varios valores en un atributo de clase, hay que separarlos con **dos (2)** espacios:
 
-Al escribir varios valores en un atributo de clase, hay que separarlos con **dos (2)** espacios:
+* Cuando hay **varias clases que están relacionadas entre sí, podrá agruparlas entre corchetes ([ y ])**, así:
 
-<pre>        
-<div class="foo  bar">
-      </pre>
+* Al igual que con nuestros conjuntos de reglas CSS, es posible utilizar los espacios en blanco de forma significativa en el código HTML. Puede denotar **descansos temáticos en el contenido** con **cinco (5)** líneas vacías, por ejemplo:
 
-Cuando hay **varias clases que están relacionadas entre sí, podrá agruparlas entre corchetes ([ y ])**, así:
+* Para **fragmentos independientes**, pero vagamente relacionados el marcado es con **una sola línea** en blanco, por ejemplo:
 
-<pre>          
-<div class="[ box  box--highlight ]  [ bio  bio--long ]">
-      </pre>
-
-[Leer más+](http://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/)
-
-Al igual que con nuestros conjuntos de reglas CSS, es posible utilizar los espacios en blanco de forma significativa en el código HTML. Puede denotar **descansos temáticos en el contenido** con **cinco (5)** líneas vacías, por ejemplo:
-
-<pre>         
-<header class="page-head">
-    ...
-</header>
-
-<main class="page-content">
-    ...
-</main>
-
-<footer class="page-foot">
-    ...
-</footer>
-      </pre>
-
-Para **fragmentos independientes**, pero vagamente relacionados el marcado es con **una sola línea** en blanco, por ejemplo:
-
-<pre>          
-<ul class="primary-nav">
-
-    <li class="primary-nav__item">
-        <a href="/" class="primary-nav__link">Home</a>
-    </li>
-
-    <li class="primary-nav__item  primary-nav__trigger">
-        <a href="/about" class="primary-nav__link">About</a>
-
-        <ul class="primary-nav__sub-nav">
-            <li><a href="/about/products">Products</a></li>
-            <li><a href="/about/company">Company</a></li>
-        </ul>
-
-    </li>
-
-    <li class="primary-nav__item">
-        <a href="/contact" class="primary-nav__link">Contact</a>
-    </li>
-
-</ul>
-      </pre>
-
-Esto permite a los desarrolladores detectar **partes separadas del DOM de un vistazo**.
+* Esto permite a los desarrolladores detectar **partes separadas del DOM de un vistazo**.
 
 ## Comentarios
 
