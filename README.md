@@ -1,5 +1,5 @@
 # Proyecto Titanio CSS
-![alt text](https://source.unsplash.com/UhagOo7IOyc/4853x2730 "Imagen deorativa")
+![alt text](https://source.unsplash.com/UhagOo7IOyc/4853x2730 "Imagen decorativa")
 
 La Aplicación Web está hospedada en **Azure** y está **implementada de forma continua desde el repositorio [GitHub](https://github.com/franciscomarinas/adatabuy)** como **servicio de control del código fuente**.
 
