@@ -80,7 +80,7 @@ y cualquier desviación debe ser justificada.
 
 ## Varios archivos Css
 
-Es una buena idea dividir trozos discretos de código css en archivos independientes para posteriormente procesarlos y concatenarlos en un archivo único.
+Es una buena idea dividir trozos discretos de código css/scss en archivos independientes para posteriormente procesarlos y concatenarlos en un archivo único.
 
 ## Tabla de contenido
 
