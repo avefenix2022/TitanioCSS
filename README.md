@@ -45,7 +45,7 @@ Utilizamos SCSS como preprocesador CSS, **separamos el SCSS** en:
 *   color
 *   cover
 
-# Guía de Estilo para CSS
+# Guía de Estilo para el CSS
 
 Las guías de estilo se deben:
 
