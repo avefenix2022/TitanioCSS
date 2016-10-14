@@ -22,9 +22,8 @@
 * GRID
 * Grid ................... Regilla de maquetación de 12 columnas.
 */
-/*-------------------------------------*\ 
-    #Grid
-\*–––––––––––––––––––––––––––––––––––– */
+/*------------------------------------*    #REGILLA
+\*------------------------------------*/
 .container {
   position: relative;
   width: 100%;
@@ -175,8 +174,8 @@
 * Tipografías
 * Estilos Base
 */
-/* Base Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*------------------------------------*    #ESTILOS-BASE
+\*------------------------------------*/
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
@@ -198,8 +197,8 @@ body {
 * BASE
 * Encabezamientos ........ H1-H6.
 */
-/* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*------------------------------------*    #TIPOGRAFIA
+\*------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -288,8 +287,8 @@ p {
 * Pies de las Página ..... El pie de página.
 * Botones ................ Elementos Button.
 */
-/* Buttons
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*------------------------------------*    #BOTONES
+\*------------------------------------*/
 .button,
 button,
 input[type="submit"],
@@ -357,8 +356,8 @@ input[type="button"].button-primary:focus {
 /*
 * Links .................. Etiquetas a.
 */
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*------------------------------------*    #LINKS
+\*------------------------------------*/
 a {
   color: #1EAEDB;
 }
@@ -370,8 +369,8 @@ a:hover {
 /*
 * Forms .................. Formularios.
 */
-/* Forms
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*------------------------------------*    #FORMULARIOS
+\*------------------------------------*/
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -450,8 +449,8 @@ label > .label-body {
 /*
 * Lists .................. Listas ordenadas y no ordenadas.
 */
-/* Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*------------------------------------*    #SECCION-TITULO
+\*------------------------------------*/
 ul {
   list-style: circle inside;
 }
@@ -480,8 +479,8 @@ li {
 /*
 * Code ................... Etiqueta pre y code.
 */
-/* Code
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*------------------------------------*    #CODE
+\*------------------------------------*/
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
@@ -501,8 +500,8 @@ pre > code {
 /*
 * Tables ................. Estilos de tablas.
 */
-/* Tables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*------------------------------------*    #TABLAS
+\*------------------------------------*/
 th,
 td {
   padding: 12px 15px;
@@ -523,8 +522,8 @@ td:last-child {
 /*
 * Spacing ................ Separaciones y espacios.
 */
-/* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*------------------------------------*    #ESPACIADO
+\*------------------------------------*/
 button,
 .button {
   margin-bottom: 1rem;
@@ -552,8 +551,8 @@ form {
 /*
 * Utilities .............. Diferentes utilidades.
 */
-/* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*------------------------------------*    #UTILIDADES
+\*------------------------------------*/
 .u-full-width {
   width: 100%;
   box-sizing: border-box;
@@ -575,8 +574,8 @@ form {
 /*
 * misc ................... hr.
 */
-/* Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*------------------------------------*    #MISC
+\*------------------------------------*/
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
@@ -587,9 +586,8 @@ hr {
 /*
 * Clearing ............... Para limpiar float.
 */
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* Self Clearing Goodness */
+/*------------------------------------*    #LIMPIADORA
+\*------------------------------------*/
 .container:after,
 .row:after,
 .u-cf {
@@ -621,8 +619,8 @@ hr {
 * @media (min-width: 1200px) {}
 
 */
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*------------------------------------*    #MEDIA-QUERIES
+\*------------------------------------*/
 /*
 Note: The best way to structure the use of media queries is to create the queries
 near the relevant code. For example, if you wanted to change the styles for buttons

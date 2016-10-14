@@ -19,11 +19,11 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize-dist.css">
   
   <link rel="stylesheet" href="css/skeleton-dist.css">
   
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main-dist.css">
 
 
 
@@ -59,19 +59,19 @@
        
     <h1 class="color-salmon">Proyecto Titanio CSS</h1>
 
-    <p>La Aplicación Web esta hospedada en <strong>Azure</strong> y está <strong>implementada de forma continua desde el repositorio <a href="https://github.com/franciscomarinas/adatabuy">GitHub</a></strong> como <strong>servicio de control del código fuente</strong>.</p>
+    <p>La Aplicación Web esta hospedada en <strong>Azure</strong> y está <strong>implementada de forma continua desde el repositorio <a href="https://github.com/franciscomarinas/adatabuy">GitHub</a></strong> como un <strong>servicio de control del código fuente</strong>.</p>
 
-    <p>Las <strong>ventajas de la implementación desde un servicio de control de código</strong> fuente basado en la nube son las siguientes:</p>
+    <p>Las <strong>ventajas de la implementación desde un servicio de control de código</strong> fuente basado en la nube son:</p>
 
     <ul>
-        <li>Control de versiones para habilitar la <strong>reversión</strong>.</li>
-        <li>Capacidad para configurar la <strong>implementación continua</strong> de repositorios Git.</li>
-        <li>Implementación específica de ramas, se pueden implementar ramas diferentes en aplicaiones distintas.<br>
+        <li>Contar con un Control de versiones.</li>
+        <li>Disponer de una <strong>implementación continua</strong> desde un repositorios Git.</li>
+        <li>Implementación específica por ramas, pudiendo implementar ramas diferentes en aplicaiones distintas.<br>
         Toda la funcionalidad del motor de implementación de <strong>Kudu</strong> está disponible (por ejemplo, control de versiones de implementación, reversión, restauración de paquetes, automatización).</li>
         <li>La implementación continua representa una buena opción para los <strong>proyectos donde se integran contribuciones diversas y frecuentes</strong>.</li>
     </ul>
 
-    <P>Se crea una asociación con el repositorio, se extraen los archivos de la rama master y se mantiene un clon del repositorio para la aplicación. Al configurar la implementación continua de VSTS desde el Portal de Azure, la integración usa el motor de implementación de <strong>Kudu</strong>, que ya automatiza las tareas de compilación e implementación con cada <strong>git push</strong>.</P>
+    <P>Se crea una asociación con el repositorio, se extraen los archivos de la rama master y se mantiene un clon del repositorio para la aplicación. La integración usa el motor de implementación de <strong>Kudu</strong>, que ya automatiza las tareas de compilación e implementación con cada <strong>git push</strong>.</P>
   
     </div>
       
@@ -90,17 +90,17 @@
 <div class="row">
     <div class="twelve column" style="margin-top: 8rem">
        
-    <h1 class="color-salmon">Nuestro Framework Titanio CSS</h1>
+    <h1 class="color-salmon">Framework Titanio CSS</h1>
 
     <p>Nos basamos en el framework Skeleton: <a href="http://getskeleton.com">getskeleton.com</a>. Con una anchura para el contenido de <strong>960px</strong>.</p> 
-    <br>Por media queries:
+    <p>Por <strong>media queries</strong>:</p>
     <ul>
-        <li>por debajo de <strong>550px</strong> se apila el contenido, con una anchura del contenido del <strong>100%</strong>,</li>
-        <li>entre <strong>400 y 500px</strong> esta anchura es del <strong>85%</strong> ,</li>
-        <li>y por encima de los <strong>550px</strong> del <strong>80%</strong>.</li>
+        <li>Por debajo de <strong>550px</strong> se apila el contenido, ocupando el <strong>100%</strong> del ancho de la ventana.</li>
+        <li>Entre <strong>400px y 500px</strong> ocupa <strong>85%</strong>.</li>
+        <li>Por encima de los <strong>550px</strong> el <strong>80%</strong>.</li>
     </ul>
     
-    <p>Utilizamos SCSS como preprocesador CSS, <strong>separamos el SCSS</strong> en: </p>
+    <p>Utilizamos <strong>SCSS</strong> como preprocesador CSS. <strong>separamos el SCSS</strong> en: </p>
     <ul>
         <li>grid</li>
         <li>estilos-base</li>
@@ -118,12 +118,14 @@
         <li>media-queries</li>
     </ul>
     
+    <p>Se importan en skeleton.scss. Se procesan en skeleton.css y skeleton-dist.css que es el archivo minificado.</p> 
+    
     <ul>
         <li>color</li>
         <li>cover</li>
     </ul>
     
-    
+   <p>Se importan en main.scss. Se procesan en main.css y main-dist.css que es el archivo minificado.</p> 
    
                 
     </div>
@@ -174,12 +176,12 @@
       
       <h2 class="color-esmeralda">Reglas</h2>
       <ul>
-          <li><strong>(4) espacios</strong> para indentar, no tabular.</li>
-          <li>Columna de <strong>80 caracteres</strong> de ancho.</li>
-          <li>CSS multilínea.</li>
-          <li><strong>Orden alfabético.</strong></li>
-          <li>Una columna para la propiedad y otra para el valor.</li>
-          <li>Uso de espacios en blanco para facilitar la lectura.</li>
+           <li><strong>(4) espacios</strong> para indentar, <strong>no tabular</strong>.</li>
+           <li>Columna de <strong>80 caracteres</strong> de ancho.</li>
+           <li><strong>CSS multilínea</strong>.</li>
+           <li><strong>Orden alfabético.</strong></li>
+           <li><strong>Dos columnas</strong> una para la <strong>propiedad</strong> y otra para el <strong>valor</strong>.</li>
+           <li>Uso de espacios en blanco para facilitar la lectura.</li>
       </ul>
       <pre>
       
@@ -197,8 +199,8 @@
      
      
      
-     <h2 class="color-esmeralda">Varios archivos Css</h2>
-     <p>Es una buena idea dividir trozos discretos de código css/scss en archivos independientes para posteriormente procesarlos y concatenarlos en un archivo único.</p>
+     <h2 class="color-esmeralda">Varios archivos Css/Scss</h2>
+     <p>Es una buena idea dividir <strong>trozos discretos de código</strong> css/scss en archivos independientes para posteriormente <strong>procesarlos y concatenarlos</strong> en un archivo único.</p>
 
     
     
@@ -208,7 +210,7 @@
      
          
      <h2 class="color-esmeralda">Tabla de contenido</h2>
-     <p>Una tabla de contenidos marca un esqueleto sobre el que apoyar la estructura del documento. </p>
+     <p>Una tabla de contenidos marca un esqueleto sobre el que asentar la estructura del documento. </p>
      
      <pre>
          
@@ -362,8 +364,8 @@
      <p>Siempre que sea posible, la anchura de los archivos css se limitará a 80 caracteres. Las razones para esto incluyen:
      </p>
      <ul>
-         <li>Capacidad para abrir varios documentos uno al lado del otro.</li>
-         <li>Visualizar los archivos css en sitios como GitHub y ventanas de terminal.</li>
+         <li>Capacidad para <strong>abrir varios documentos uno al lado del otro</strong>.</li>
+         <li>Visualizar los archivos css en sitios como <strong>GitHub y ventanas de terminal</strong>.</li>
          <li>Proporcionar una longitud de línea cómoda para comentarios.</li>
      </ul>
      <pre>
@@ -389,16 +391,16 @@
      <pre>
          
 /*------------------------------------*\
-    #SECTION-TITLE
+    #SECCION-TITULO
 \*------------------------------------*/
 
 .selector {}
      </pre>
      
-     <p>El título de la sección está <strong>precedido de un símbolo de almohadilla (#) que nos permita realizar búsquedas más específicas</strong>. En lugar de buscar simplemente SECCIÓN-TITULO que pueden producir muchos resultados que una búsqueda más restringida de <strong>#SECCIÓN-TÍTULO</strong> la cual debería devolver solo la sección en cuestión.</p>
+     <p>El título de la sección está <strong>precedido de un símbolo de almohadilla (#) que nos permita realizar búsquedas más específicas</strong>. En lugar de buscar simplemente SECCION-TITULO que pueden producir muchos resultados que una búsqueda más restringida de <strong>#SECCION-TITULO</strong> la cual debería devolver solo la sección en cuestión.</p>
      
      <p><strong>Dejar un retorno de carro entre este título y la siguiente línea de código.</strong></p>
-     <p>Si está trabajando en un proyecto en el que cada sección es su propio archivo, este título debería aparecer en la parte superior de cada uno de ellos. Si está trabajando en un proyecto con varias secciones por archivo, <strong>cada título debe ir precedido de cinco (5) retornos de carro</strong>. Este espacio en blanco adicional junto con un título hace que las nuevas secciones sean mucho más fácil de detectar cuando uno se desplaza a través de archivos de gran tamaño:</p>
+     <p><strong>Si se está trabajando en un proyecto en el que cada sección es su propio archivo, este título debería aparecer en la parte superior de cada uno de ellos</strong>. Si está trabajando en un proyecto con varias secciones por archivo, <strong>cada título debe ir precedido de cinco (5) retornos de carro</strong>. Este espacio en blanco adicional junto con un título hace que las nuevas secciones sean mucho más fácil de detectar cuando uno se desplaza a través de archivos de gran tamaño:</p>
      <pre>
      
 /*------------------------------------*\
