@@ -118,14 +118,14 @@
         <li>media-queries</li>
     </ul>
     
-    <p>Se importan en skeleton.scss. Se procesan en skeleton.css y skeleton-dist.css que es el archivo minificado.</p> 
+    <p>Se importan en skeleton.scss. Se procesan en <strong>skeleton.css y skeleton-dist.css</strong> que es el archivo minificado.</p> 
     
     <ul>
         <li>color</li>
         <li>cover</li>
     </ul>
     
-   <p>Se importan en main.scss. Se procesan en main.css y main-dist.css que es el archivo minificado.</p> 
+   <p>Se importan en main.scss. Se procesan en <strong>main.css y main-dist.css</strong> que es el archivo minificado.</p> 
    
                 
     </div>
@@ -491,14 +491,14 @@
 .icon--settings { background-position: -16px -16px; }
       </pre>
       
-      <p><strong>Cuando la presentación en una sola línea proporciona mejor la información por simplicidad y comparación se puede codificar en una sola línea.</strong></p>
+      <p><strong>Cuando una sola línea proporciona mejor la información por simplicidad y comparación se puede codificar en una sola línea.</strong></p>
       
       
       
       
       
       <h2 class="color-esmeralda">Sangría</h2>
-      <p>Se pueden sangrar selectores con sus declaraciones para indicar relaciones entre ellos:</p>
+      <p>Se pueden <strong>sangrar selectores con sus declaraciones para indicar relaciones entre ellos</strong>:</p>
       
       <pre>
           
@@ -510,14 +510,14 @@
       </pre>
       
       <p>De esta manera, un desarrollador puede ver a simple vista que <code>.foo__baz {}</code> vive en el interior de <code>.foo__bar {}</code> y este vive dentro <code>.foo {}</code>.</p>
-      <p>Esta cuasi-replicación del DOM le dice a los desarrolladores mucho acerca de donde se espera que las clases van a ser utilizadas sin que tengan que hacer referencia a un fragmento de código HTML.</p>
+      <p>Esta cuasi-replicación del DOM informa donde se espera que las clases van a ser utilizadas sin que tengan que hacer referencia a un fragmento de código HTML.</p>
       
       
       
       
       
       <h2 class="color-esmeralda">Sangría Sass</h2>
-      <p>Sass proporciona una funcionalidad de anidación (<strong>nesting</strong>), como esta:</p>
+      <p><strong>Scss</strong> proporciona una funcionalidad de anidación (<strong>nesting</strong>), como esta:</p>
       
       <pre>
 
@@ -535,11 +535,11 @@
       
       <pre>
           
-.foo { color: red; }
+.foo      { color: red; }
 .foo .bar { color: blue; }
       </pre>
       
-      <p>Cuando sangramos en Sass, nos ceñimos a los mismos cuatro (4) espacios, y también dejar una línea en blanco antes y después del conjunto de reglas anidadas.</p>
+      <p>Cuando sangramos en Sass, nos ceñimos a los mismos <strong>cuatro (4) espacios</strong>, y también dejar <strong>una línea en blanco antes y después del conjunto de reglas anidadas</strong>.</p>
       
       <p><strong>La anidación en Sass debe evitarse siempre que sea posible, por especificidad!</strong></p>
       
@@ -548,7 +548,7 @@
       
       
       <h2 class="color-esmeralda">Alinear</h2>
-      <p>Intentar alinear cadenas idénticas y relacionadas en las declaraciones, por ejemplo:</p>
+      <p>Intentar <strong>alinear cadenas idénticas y relacionadas</strong> en las declaraciones, por ejemplo:</p>
       
       <pre>
           
@@ -565,9 +565,9 @@
     bottom:                0;
     left:                  0;
     margin-right:          -10px;
-    margin-left:          -10px;
-    padding-right:        10px;
-    padding-left:         10px;
+    margin-left:           -10px;
+    padding-right:         10px;
+    padding-left:          10px;
 }
       </pre>
       
@@ -623,7 +623,7 @@
 &lt;div class="box"&gt;
       </pre>
       
-      <p>Al escribir varios valores en un atributo de clase, hay que separarlos con <strong>dos (2)</strong> espacios:</p>
+      <p>Al escribir varios valores en un <strong>atributo de clase</strong>, hay que separarlos con <strong>dos (2)</strong> espacios:</p>
       
       <pre>
         
@@ -636,8 +636,6 @@
           
 &lt;div class="[ box  box--highlight ]  [ bio  bio--long ]"&gt;
       </pre>
-      
-      <p><a href="http://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/">Leer más+</a></p>
       
       <p>Al igual que con nuestros conjuntos de reglas CSS, es posible utilizar los espacios en blanco de forma significativa en el código HTML. Puede denotar <strong>descansos temáticos en el contenido</strong> con <strong>cinco (5)</strong> líneas vacías, por ejemplo:</p>
       
@@ -697,11 +695,11 @@
       
       
       <h2 class="color-esmeralda">Comentarios</h2>
-      <p>La sobrecarga cognitiva de trabajar con CSS es enorme. Con tantos matices que dificulta ser consciente de todos, y más de los específicos de cada proyecto, la peor situación que la mayoría de los desarrolladores se encuentran es que no son la persona que escribió el código. Estas pueden recordar sus propias clases, reglas,... que es manejable hasta cierto punto, pero cualquier persona que hereda CSS apenas tiene posibilidades.</p>
-      <p>El CSS necesita más comentarios.</p>
-      <p>Como regla general, se debe comentar cualquier cosa que no sea evidente a partir solo del código. Es decir, no hay necesidad de decirle a alguien que color: red; colorea la fuente de rojo, pero si se está utilizando overflow: hidden; para borrar los desbordamientos -en contraste con un elemento con desbordamiento, esto es probablemente algo que vale la pena documentar.</p>
+      <p>La sobrecarga cognitiva de trabajar con CSS y HTML es enorme. Con tantos matices que dificulta ser consciente de todos, y más de los específicos de cada proyecto, la peor situación que la mayoría de los desarrolladores se encuentran es que no son la persona que escribió el código. Estas pueden recordar sus propias clases, reglas,... que es manejable hasta cierto punto, pero cualquier persona que hereda CSS apenas tiene posibilidades.</p>
+      <p><strong>El CSS necesita más comentarios</strong>.</p>
+      <p>Como regla general, se debe <strong>comentar cualquier cosa que no sea evidente a partir solo del código</strong>. Es decir, no hay necesidad de decirle a alguien que color: red; colorea la fuente de rojo, pero si se está utilizando overflow: hidden; para borrar los desbordamientos -en contraste con un elemento con desbordamiento, esto es probablemente algo que vale la pena documentar.</p>
       
-      <p>Para grandes comentarios que documentan secciones o componentes enteros, usamos un comentario de varias líneas de ancho de <strong>80</strong> columnas. Por ejemplo:</p>
+      <p>Para grandes comentarios que documentan secciones o componentes enteros, usamos un comentario de varias líneas de <strong>80</strong> columnas de ancho. Por ejemplo:</p>
       
       <pre>
           
@@ -722,13 +720,13 @@
       
       
       <h2 class="color-esmeralda">Extensión de reglas</h2>
-      <p>Cuando trabajamos con el patrón OOCSS, con reglas que pueden estar relacionadas incluso en archivos diferentes se deben de indicar estas extensiones.</p>
+      <p>Cuando trabajamos con el patrón <strong>OOCSS</strong>, con reglas que pueden estar relacionadas incluso en archivos diferentes se deben de indicar estas extensiones.</p>
       <p>En el archivo del objeto:</p>
       
       <pre>
         
 /**
- * Extiende `.btn {}` en _components.buttons.scss.
+ * Extiende '.btn {}' en _components.buttons.scss.
  */
 
 .btn {}
@@ -739,7 +737,7 @@
       <pre>
           
 /**
- * Estas reglas extienden `.btn {}` en _objects.buttons.scss.
+ * Estas reglas extienden '.btn {}' en _objects.buttons.scss.
  */
 
 .btn--positive {}
@@ -754,11 +752,11 @@
       
   
       <h2 class="color-esmeralda">Comentarios del preprocesador</h2>
-      <p>Con la mayoría, si no todos lo pre-procesadores, tenemos la opción de escribir comentarios que no serán compilados a nuestro fichero CSS resultante. Como regla general,  se debe de usar estos comentarios para documentar código que afecte al archivo precompilado y que no va a aparecer escrito en el archivo CSS porque allí no se aplica. Si se está documentando código que se compila, utilizar los comentarios que se compilará también. Por ejemplo, esto es correcto:</p>
+      <p>Con la mayoría, si no todos lo pre-procesadores, tenemos la opción de escribir comentarios que no serán compilados a nuestro fichero CSS resultante. Como regla general,  se debe de usar estos comentarios para <strong>documentar código que afecte al archivo precompilado y que no va a aparecer escrito en el archivo CSS porque allí no se aplica</strong>. Si se está documentando código que se compila, utilizar comentarios que se compilarán también. Por ejemplo, esto es correcto:</p>
       
       <pre>
           
-// Dimensiones de imágnes @2x:
+// Dimensiones de imágenes @2x:
 $sprite-width:  920px;
 $sprite-height: 212px;
 
@@ -781,29 +779,29 @@ $sprite-height: 212px;
       
       
       <h2 class="color-esmeralda">Eliminar comentarios</h2>
-      <p>No hace falta decir que en el <strong>entorno de producción</strong> no deben de aparecer estos comentarios. <strong>Todos los CSS deben de ser minificados</strong> lo que conlleva la pérdida de estos comentarios antes de ser desplegados los archivos.</p>
+      <p>No hace falta decir que en el <strong>entorno de producciónno deben de aparecer estos comentarios</strong> . <strong>Todos los CSS deben de ser minificados</strong> lo que conlleva la pérdida de estos comentarios antes de ser desplegados los archivos.</p>
       
       
       
       
       
-      <h2>Convenios de Nombres</h2>
-      <p>Tener una convención en los nombres en las denominaciones CSS son muy útilies para hacer el código más estricto, transparente e informativo.</p>
+      <h2 class="color-esmeralda">Convenios de Nombres</h2>
+      <p>Tener una convención en los nombres en las denominaciones CSS son <strong>muy útilies para hacer el código más estricto, transparente e informativo</strong>.</p>
       <p>Una buena convención de nombres debe de comunicarte a tí y tu euipo:</p>
       <ul>
-          <li>Qué tipo de cosa hace una clase</li>
-          <li>Dónde una clase debe de ser utilizada</li>
-          <li>Con qué una clase podría estar realcionada</li>
+          <li><strong>Qué tipo de cosa hace la clase</strong>.</li>
+          <li><strong>Dónde la clase debe de ser utilizada</strong>.</li>
+          <li><strong>Con qué una clase podría estar realcionada</strong>.</li>
       </ul>
-      <p>La convención de nombres es muy simple: un guión (-) para delimitar cadenas, y con la denominación BEM para piezas más complejas de código.</p>
-      <p>Vale la pena señalar que una convención de nombres no es normalmente útil del lado del desarrollo CSS, son útilies cuando se ven con el HTML.</p>
+      <p><strong>La convención de nombres: un guión (-) para delimitar cadenas, y con la denominación BEM para piezas más complejas de código</strong>.</p>
+      <p>Vale la pena señalar que una convención de nombres no es normalmente útil del lado del desarrollo CSS, <strong>son útilies cuando se ven con el HTML</strong>.</p>
       
       
       
       
       
-      <h2>Delimitador guión</h2>
-      <p>Todas las cadenas de las clases están delimitadas con un guión (-), así:</p>
+      <h2 class="color-esmeralda">Delimitador guión</h2>
+      <p><strong>Todas las cadenas de las clases están delimitadas con un guión (-)</strong>, así:</p>
       
       <pre>
           
@@ -812,7 +810,7 @@ $sprite-height: 212px;
 .sub-content {}
       </pre>
       
-      <p>Camel case y guiones bajos no son utilizados. Lo siguiente es incorrecto:</p>
+      <p><strong>Camel case y guiones bajos no deben ser utilizados</strong>. Lo siguiente es incorrecto:</p>
       
       <pre>
           
@@ -825,14 +823,14 @@ $sprite-height: 212px;
       
       
       
-      <h2>Nombrar como BEM</h2>
+      <h2 class="color-esmeralda">Nombrar como BEM</h2>
       <p>A mayores para componentes interrelacionados de la interfaz de usuario que requiere un número mayor de clases, se utiliza la convención de nomenclatura similar a BEM.</p>
-      <p>BEM, bloque, elemento, modificador, es una metodología de front-end acuñada por los desarrolladores que trabajan en Yandex. Mientras BEM es una metodología completa, aquí sólo nos interesa su convención de nombres. Además, la convención de nombres aquí solamente es como BEM; los principios son exactamente los mismos, pero la sintaxis real difiere ligeramente.</p>
+      <p>BEM, bloque, elemento, modificador, es una metodología de front-end acuñada por los desarrolladores de <a href="https://www.yandex.com/">Yandex</a>. Mientras BEM es una metodología completa, aquí <strong>sólo nos interesa su convención de nombres</strong>. Además, la convención de nombres aquí solamente es como BEM; los principios son exactamente los mismos, pero la sintaxis real difiere ligeramente.</p>
       <p>BEM divide clases de componentes en tres grupos:</p>
       <ul>
-          <li>Bloque: La única raíz del componente.</li>
-          <li>Elemento: un componente del bloque.</li>
-          <li>Modificador: Una variante o extensión del bloque.</li>
+          <li><strong>Bloque</strong>: La única raíz del componente.</li>
+          <li><strong>Elemento</strong>: un componente del bloque.  <strong>Los elementos son delimitados con dos (2) guiones bajos (__) </strong>.</li>
+          <li><strong>Modificador</strong>: Una variante o extensión del bloque. <strong>Los modificadores con dos (2) guiones (--)</strong></li>
       </ul>
       
       <pre>
@@ -841,15 +839,14 @@ $sprite-height: 212px;
 .person__cabeza {}
 .person--alto {}
       </pre>
-      
-      <p>Los elementos son delimitados con dos (2) guiones bajos (__) y los modificadores con dos (2) guiones (--).</p>
-      <p>Aquí podemos ver que <code>.person {}</code> es el bloque; es la única raíz de una entidad discreta. <code>.person__cabeza {}</code> es un elemento; que es una parte más pequeña del bloque <code>.person {}</code>. Por último, <code>.person--alto {}</code> es un modificador; se trata de una variante específica del bloque <code>.person {}</code>.</p>
-      
+
+      <p>Aquí podemos ver que <code>.person {}</code> es el <strong>bloque</strong>; es la única raíz de una entidad discreta. <code>.person__cabeza {}</code> es un elemento; que es una parte más pequeña del <strong>bloque</strong> <code>.person {}</code>. <br>Por último, <code>.person--alto {}</code> es un <strong>modificador</strong>; se trata de una variante específica del <strong>bloque</strong> <code>.person {}</code>.</p>
       
       
       
       
-      <h2>Contexto de partida</h2>
+      
+      <h2 class="color-esmeralda">Contexto de partida</h2>
       <p>Su contexto de bloque comienza en el auto-contenido, la ubicación discreta más lógica. Para continuar con nuestra analogía basada en la persona, no tendríamos una clase como persona como .room_ {}, ya que la habitación es otro contexto mucho más alto. Probablemente tendríamos bloques separados, de este modo:</p>
       
       <pre>
