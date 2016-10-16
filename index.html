@@ -71,7 +71,14 @@
         <li>La implementación continua representa una buena opción para los <strong>proyectos donde se integran contribuciones diversas y frecuentes</strong>.</li>
     </ul>
 
-    <P>Se crea una asociación con el repositorio, se extraen los archivos de la rama master y se mantiene un clon del repositorio para la aplicación. La integración usa el motor de implementación de <strong>Kudu</strong>, que ya automatiza las tareas de compilación e implementación con cada <strong>git push</strong>.</P>
+    <p>Se crea una asociación con el repositorio, se extraen los archivos de la rama master y se mantiene un clon del repositorio para la aplicación. La integración usa el motor de implementación de <strong>Kudu</strong>, que ya automatiza las tareas de compilación e implementación con cada <strong>git push</strong>.</p>
+    
+    <p><strong>Referencias</strong>:</p>
+
+      <ul>
+          <li><a href="https://github.com/inuitcss/inuitcss">inuitcss</a></li>
+      </ul>
+      
   
     </div>
       
@@ -143,6 +150,80 @@
     
       <div class="row">
       <div class="twelve column" style="margin-top: 8rem">
+      
+      <h1 class="color-salmon">BEM, OOCSS, y SMACSS</h1>
+      <p>BEM, OOCSS, y SMACSS surgieron como soluciones a problemas de mantenimiento de hojas de estilos CSS en grandes proyectos web, pero el concepto es aplicable a todo tipo de proyectos. El OOCSS de Nicole Sullivan es el más general y abstracto de los modelos y la metodología BEM son reglas demasiado estrictas (¿qué guión uso?). En el enfoque que plantea Jonathan Snook en SMACSS  la categorización de las reglas es intuitiva y la convención de nombres es sencilla.</p>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">OOCSS</h2>
+      <p>OOCSS (CSS orientado a objetos1) se basa en 2 principios:</p>
+      <ul>
+          <li><strong>Separación de estructura y estilo visual</strong>: definir los estilos visuales (por ej. color de fondo y estilo de borde) como “skins” que se pueden aplicar a diversos módulos.</li>
+          <li><strong>Separación de contenedor y contenido</strong>: evitar el selector descendiente, por ej. no usar .sidebar h3.</li>
+      </ul>
+      <p>OCCSS promueve la creación de una librería de componentes re-utilizables dentro del mismo sitio o entre proyectos. Los componentes son independientes de la ubicación en la página, se comportan en forma predecible, son por lo tanto portables y se pueden combinar para extender un módulo base. Para que la cascada se comporte de manera predecible se usan selectores de clase.</p>
+      <p>Aplica el principio DRY (no te repitas) y por lo tanto produce CSS:</p>
+      <ul>
+          <li>Escalable: se aplica a proyectos de cualquier tamaño.</li>
+          <li>Fácil de mantener: es una arquitectura transparente que sigue el principio de única responsabilidad. La arquitectura se refiere a qué selectores usás.</li>
+          <li>Rápido: Menos CSS = más velocidad.</li>
+      </ul>
+      
+      
+      
+      
+      <h2 class="color-esmeralda">BEM</h2>
+      <p>BEM (bloque, elemento, modificador) son una serie de principios desarrollados por la empresa de TI rusa Yandex para crear rápidamente sitios web fáciles de mantener en un período largo de tiempo.</p>
+      <ul>
+          <li><strong>Bloque</strong>: es una entidad independiente. Puede ser simple o compuesto por otros bloques. Ej.: buscador (simple) o cabezal (compuesto).</li>
+          <li><strong>Elemento</strong>: parte de un bloque que cumple una función. Ej.: input y botón.</li>
+          <li><strong>Modificador</strong>: con un modificador se crea un bloque similar a otro existente. Por ej. para indicar un elemento activo de un menú, se usa un modificador.</li>
+      </ul>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">SMACSS</h2>
+      <p>SMACSS (Arquitectura modular y escalable para CSS) es una guía de estilo escrita por Jonathan Snook un diseñador, desarrollador web y autor de The Art and Science of CSS publicado por SitePoint.</p>
+      <ul>
+          <li>Base: reglas básicas para elementos (o [atributos], pseudo-clases, etc.). Normalize.css es un ejemplo de reglas básicas.</li>
+          <li>Maquetación: define las secciones de una página (grilla).</li>
+          <li>Módulo: componentes re-usables y modulares.</li>
+          <li>Estado: cómo luce un módulo a través de diferentes estados, o sea clases que se agregan vía JavaScript (oculto/expandido, activo/inactivo) y a través de distintas vistas (homepage, página interior)</li>
+          <li>Tema: es lo que en OOCSS se le llama “skin”. En SMACSS es opcional, los estilos visuales pueden estar integrados a los módulos y estados o separados por tema para sitios en donde el usuario pueda elegir un tema, para sitios multi-lenguaje2, etc.</li>
+      </ul>
+      <p>La convención es nombrar las clases con un prefijo que indica la categoría. Los módulos no llevan prefijos y los sub-módulos llevan como prefijo el nombre del módulo padre.</p>
+      
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Arquitectura CSS</h2>
+      <ul>
+          <li>Semántico vs Genérico: La arquitectura CSS tiene que ver con encontrar un punto intermedio entre semántico y genérico. Los nombres de las clases deben ser lo suficientemente claros para entender qué son, pero no tan específicos que no se puedan re-utilizar.</li>
+          <li>Diseño vs Refactorización: El diseño es un proceso creativo y cada sitio web es único. Podés empezar desde el primer día con la arquitectura CSS en mente, pero generalmente es un proceso porque necesitás tener una cierta cantidad de elementos del diseño definidos para poder abstraer patrones que se repiten. Una vez que el sitio web está online no deberías tener que refactorizar para agregar un nuevo componente.</li>
+          <li>Único vs Re-usable: Que diseñes sitios web a medida no significa que tengas que resolver los mismos problemas una y otra y otra y otra vez.</li>
+          <li>Nombres vs Mantenimiento: Durante el desarrollo tener una guía de cómo nombrar objetos te sirve para no perder tiempo pensando en qué nombre de clase le pongo al título del formulario. Los nombres de clase con prefijos son útiles para el mantenimiento porque es muy obvio saber a qué van a afectar y podés introducir un objeto nuevo con la seguridad de que no vas a alterar uno existente.</li>
+      </ul>
+      
+      
+      
+      
+      <h2 class="color-esmeralda">Frameworks basados en BEM, OOCSS y SMACSS</h2>
+      <p>Estos frameworks son ejemplos de aplicaciones de los conceptos de BEM, OOCSS y SMACSS. inuit no tiene diseño, es solamente una colección de objetos CSS. Pure y Topcoat soportan temas personalizados.</p>
+      <ul>
+          <li>inuit.css es un framework open source que sigue la convención de nombres BEM y los principios OOCSS desarrollado Harry Roberts, un joven desarrollador web y arquitecto front-end. Es un framework modular que consiste en una serie de objetos y abstracciones, no de elementos de diseño como Bootstrap. “Generic” incluye normalize.css, el clearfix, etc. “Base” son reglas básicas para títulos, tablas y otros elementos. Finalmente “Objects” es la parte más interesante, con los objetos CSS con código profusamente comentado. inuit está desarrollado en Sass, podés modificar las variables y extenderlo con tu propia UI.</li>
+          <li>Pure: de Yahoo! consiste en una serie de módulos según se definen en SMACSS. Así como en otros frameworks podés modificar variables, en Puere podés construir una skin en un editor visual.</li>
+          <li>Topcoat de Adobe es un framework CSS para aplicaciones web basada en la arquitectura BEM y enfocada en el rendimiento. Automáticamente genera una guía de estilos, incluye archivos PSD, una colección de iconos en formato SVG y la fuente Adobe Source Sans Pro.</li>
+      </ul>
+      
+      
+      
+      
       
       
       <!------------------------------------------------------------------------->
@@ -840,124 +921,14 @@ $sprite-height: 212px;
 .person--alto {}
       </pre>
 
-      <p>Aquí podemos ver que <code>.person {}</code> es el <strong>bloque</strong>; es la única raíz de una entidad discreta. <code>.person__cabeza {}</code> es un elemento; que es una parte más pequeña del <strong>bloque</strong> <code>.person {}</code>. <br>Por último, <code>.person--alto {}</code> es un <strong>modificador</strong>; se trata de una variante específica del <strong>bloque</strong> <code>.person {}</code>.</p>
+      <p>Aquí podemos ver que <code>.person {}</code> es el <strong>bloque</strong>; es la única raíz de una entidad discreta. <code>.person__cabeza {}</code> es un <strong>elemento</strong>; que es una parte más pequeña del <strong>bloque</strong> <code>.person {}</code>. <br>Por último, <code>.person--alto {}</code> es un <strong>modificador</strong>; se trata de una variante específica del <strong>bloque</strong> <code>.person {}</code>.</p>
       
       
       
       
-      
-      <h2 class="color-esmeralda">Contexto de partida</h2>
-      <p>Su contexto de bloque comienza en el auto-contenido, la ubicación discreta más lógica. Para continuar con nuestra analogía basada en la persona, no tendríamos una clase como persona como .room_ {}, ya que la habitación es otro contexto mucho más alto. Probablemente tendríamos bloques separados, de este modo:</p>
-      
-      <pre>
-          
-.room {}
-
-    .room__door {}
-
-.room--kitchen {}
-
-
-.person {}
-
-    .person__head {}
-      </pre>
-      
-      <p>Si queríamos denotar una <code>.person {}</code> dentro de un <code>.room {}</code>, es más correcto utilizar un selector como <code>.person .room {}</code> que une dos bloques para aumentar el alcance de bloques y elementos existentes.</p>
-      <p>Un ejemplo más realista de bloques con ámbito podría ser algo como esto, donde cada trozo de código representa su propio bloque:</p>
-      
-      <pre>
-          
-.page {}
-
-
-.content {}
-
-
-.sub-content {}
-
-
-.footer {}
-
-    .footer__copyright {}
-      </pre>
-      
-      <p>Una notación incorrecta para esto sería:</p>
-      
-      <pre>
-          
-.page {}
-
-    .page__content {}
-
-    .page__sub-content {}
-
-    .page__footer {}
-
-        .page__copyright {}
-      </pre>
-      
-      <p>Es importante saber cuándo se inicia y se detiene el alcance de BEM. Como regla general, se aplica BEM a partes autónomas, partes discretas de la interfaz de usuario.</p>
-      
-      
-      
-      
-      
-      <h2>Más capas</h2>
-      <p>Si tuviéramos que añadir otro elemento digamos <code>.person__eye {}</code> para este componente <code>.person {}</code>, <strong>no tendría que pasar por todas las capas de la DOM</strong>. Es decir, la notación correcta sería <code>.person__eye {}</code>, y no <code>.person__head__eye {}</code>. Sus clases no reflejan el papel completo de la ruta del DOM.</p>
-      
-      
-      
-      
-      
-      <h2>Modificación de Elementos</h2>
-      <p>Usted puede tener variantes de elementos, y estos pueden ser denotado en un número de maneras, dependiendo de cómo y por qué se están modificando. Continuando con nuestro ejemplo de persona, un ojo azul podría tener este aspecto:</p>
-      
-      <pre>
-          
-.person__eye--blue {}
-      </pre>
-      
-      <p>Aquí podemos ver que estamos directamente modificando el elemento ojo.</p>
-      <p>Sin embargo las cosas pueden ser más complejas. Por favor, disculpe la cruda analogía, y vamos a imaginar que tenemos un elemento de cara que es guapo. La persona en sí no es tan guapo, así que modificamos el elemento cara directamente, un rostro hermoso en una persona normal:</p>
-      
-      <pre>
-          
-.person__face--handsome {}
-      </pre>
-      
-      <p>Pero ¿y si esa persona es guapa, y queremos que el estilo de su cara? Un rostro habitual en una hermosa persona:</p>
-      
-      <pre>
-          
-.person--handsome .person__face {}
-      </pre>
-      
-      <p>Esta es uno de las pocos ocasiones en donde utilizar un selector descendiente que modifica un elemento basado en un modificador de un bloque.</p>
-      
-      <p>Si se utiliza Sass, escribiríamos algo como esto:</p>
-      
-      <pre>
-          
-person {}
-
-    .person__face {
-
-        .person--handsome & {}
-
-    }
-
-.person--handsome {}
-      </pre>
-      
-      <p>Tenga en cuenta que no anida una nueva instancia de .person__face {} dentro de .person--handsome {}; en lugar de esto, hacemos uso del selector padre de Sass que antepone .person--handsome a .person__face. Esto significa que todas nuestras reglas  relativas a .person__face están en un solo lugar, y no se extienden por todo el archivo. Esta es una buena práctica general cuando se trata de código anidado: mantener la totalidad de su contexto (por ejemplo, todo el código .person__face {}) encapsulado en un solo lugar.</p>
-      
-      
-      
-      
-      
-      <h2>Convenciones de nombres en HTML</h2>
-      <p>Como comentamos previamente, las convenciones de nombres no son necesariamente útilies en el CSS. Donde la convención de nombres muestra su poder es en el marcado. Tomando el siguiente HTML con nombrado-no-convencional:</p>
+            
+      <h2 class="color-esmeralda">Convenciones de nombres en HTML</h2>
+      <p>Como comentamos previamente, <strong>las convenciones de nombres no son necesariamente útilies en el CSS. Donde la convención de nombres muestra su poder es en el marcado</strong>. Tomando el siguiente HTML con nombrado-no-convencional:</p>
       
       <pre>
           
@@ -971,7 +942,7 @@ person {}
       </pre>
       
       
-      <p>¿Cómo está el cuadro de clases y el perfil relativo a cada una? ¿Cómo están las clases de perfil y avatar relacionadas con otras? Están relacionadas con todos? Dede de ser usado pro-user al lado de bio? ¿La clase image y profile viven en la misma parte del CSS? ¿Se puede utilizar avatar en otro sitio?</p>
+      <p>¿Cómo están box y profile relacionadas? ¿Cómo están las clases de profile y avatar relacionadas con otras? ¿Están relacionadas con todos? ¿La clase image y profile viven en la misma parte del CSS? ¿Se puede utilizar avatar en otro sitio?</p>
       <p>Es muy difícil responder a cualquiera de estas preguntas. El uso de una convención de nombres, sin embargo, cambia todo eso:</p>
       
       <pre>
@@ -985,16 +956,16 @@ person {}
 &lt;/div&gt;
       </pre>
       
-      <p>Ahora podemos ver claramente que clases estan y no relacionados entre sí y cómo; sabemos qué clases no se puede utilizar fuera del alcance de este componente; y sabemos qué clases pueden ser libres de reutilizar en otro lugar.</p>
+      <p>Ahora podemos ver claramente que clases están y no relacionados entre sí y cómo; sabemos qué clases no se puede utilizar fuera del alcance de este componente; y sabemos qué clases pueden ser libres de reutilizar en otro lugar.</p>
       
       
       
       
       
-      <h2>Selectores CSS</h2>
-      <p>Es importante a la hora de escribir CSS que tenemos correctamente el alcance de nuestros selectores, y que estamos seleccionando las cosas correctas por las razones correctas.</p>
-      <p>Hay quede decidir y definir lo que quiere el estilo y cómo va a seleccionarlo.</p>
-      <p>Por ejemplo, si estás interesado en el estilo de menú de navegación principal de su sitio web, un selector que esto sería muy poco inteligente:</p>
+      <h2 class="color-esmeralda">Selectores CSS</h2>
+      <p>Es importante a la hora de escribir CSS que tenemos <strong>fijado correctamente el alcance de nuestros selectores, y que estamos seleccionando las cosas correctas por las razones correctas</strong>.</p>
+      <p>Hay que <strong>decidir y definir lo que quiere el estilo y cómo va a seleccionarlo</strong>.</p>
+      <p>Por ejemplo, si estás interesado en el estilo de menú de navegación principal de su sitio web, un selector para esto que sería muy poco inteligente:</p>
       
       <pre>
           
@@ -1009,15 +980,15 @@ header ul {}
 .site-nav {}
       </pre>
       
-      <p>Estamos seleccionando explícitamente lo correcto, exactamente por la razón correcta.</p>
+      <p>Estamos <strong>seleccionando explícitamente lo correcto, exactamente por la razón correcta</strong>.</p>
       <p><strong>Los selectores deben ser lo más explícitos posible y bien razonado como tu razón para querer seleccionar algo.</strong></p>
       
       
       
       
       
-      <h2>Reutilización</h2>
-      <p>Con un movimiento hacia un enfoq basado más en componentes para la construcción de interfaces de usuario, la idea de reutilización es de suma importancia.</p>
+      <h2 class="color-esmeralda">Reutilización</h2>
+      <p>Con un movimiento hacia un enfoque basado más en componentes para la construcción de interfaces de usuario, <strong>la idea de reutilización es de suma importancia</strong>.</p>
       <p>Por esta razón <strong>hecemos un uso intensivo de las <code>.clases</code></strong></p>
       <p>Los IDs son demasiado específico, no se pueden utilizar más de una vez en una página.</p>
       <p><strong>Todo lo que elija, desde el tipo de selector a su nombre, debería prestarse a ser reutilizado.</strong></p>
@@ -1027,7 +998,7 @@ header ul {}
       
       
       
-      <h2>Ubicación independiente</h2>
+      <h2 class="color-esmeralda">Ubicación independiente</h2>
       <p>Dada la naturaleza siempre cambiante de la mayoría de los proyectos de interfaz de usuario, y el paso a más arquitecturas basadas en componentes, es de nuestro interés no el estilo de las cosas basadas en dónde están, sino en lo que son. Es decir, al diseñar nuestros componentes deberían permanecer completamente independiente de la ubicación.</p>
       <p>Tomemos un ejemplo de un botón de llamada a la acción que hemos optado por el estilo a través de la siguiente selector:</p>
       
@@ -1049,33 +1020,26 @@ header ul {}
       
       
       
-      <h2>Portabilidad</h2>
-      <p>La reducción, o idealmente, eliminación de las dependencia de la ubicación significa que podemos mover los componentes con más libertad.</p>
+      <h2 class="color-esmeralda">Portabilidad</h2>
+      <p><strong>La reducción, o idealmente la eliminación de las dependencia de la ubicación significa que podemos mover los componentes con más libertad</strong>.</p>
       
       <pre>
           
 input.btn {}
       </pre>
       
-      <p>permite volver a utilizar la clase .btn sobre cualquier elemento que elegimos, al igual que una a, por ejemplo, o un botón.</p>
-      <p>Por supuesto, hay ocasiones en las que usted puede desear un selector-puede que tenga que aplicar un  estilo muy específico para un elemento en particular, por ejemplo:</p>
+      <p>Permite volver a utilizar la clase .btn sobre cualquier elemento que elegimos. Por supuesto, hay ocasiones en las que usted puede desear un selector que tenga que aplicar un estilo muy específico para un elemento en particular, por ejemplo:</p>
       
       <pre>
           
-/**
- * Embolden and colour any element with a class of `.error`.
- */
 .error {
-    color: red;
+    color:       red;
     font-weight: bold;
 }
 
-/**
- * If the element is a `div`, also give it some box-like styling.
- */
 div.error {
-    padding: 10px;
-    border: 1px solid;
+    padding:     10px;
+    border:      1px solid;
 }
       </pre>
       
@@ -1083,17 +1047,11 @@ div.error {
       
       <pre>
           
-/**
- * Text-level errors.
- */
 .error-text {
     color: red;
     font-weight: bold;
 }
 
-/**
- * Elements that contain errors.
- */
 .error-box {
     padding: 10px;
     border: 1px solid;
@@ -1108,7 +1066,7 @@ div.error {
       
       
       
-      <h2>Selectores cuasi-calificados</h2>
+      <h2 class="color-esmeralda">Selectores cuasi-calificados</h2>
       <p>Una cosa para la que los selectores calificados pueden ser útiles es para la señalización donde se podría esperar que una clase sea utilizada, por ejemplo:</p>
       
       <pre>
@@ -1116,71 +1074,60 @@ div.error {
 ul.nav {}
       </pre>
       
-      <p>Aquí podemos ver que la clase .nav está destinado a ser utilizado en un elemento ul, y no en un nav. Mediante el uso de selectores cuasi-calificado aún podemos proporcionar esa información sin tener que calificar el selector:</p>
+      <p>Aquí podemos ver que la clase .nav está destinado a ser utilizado en un elemento ul, y no en un nav. Mediante el uso de selectores cuasi-calificado aún <strong>podemos proporcionar esa información sin tener que calificar el selector</strong>:</p>
       
       <pre>
           
-/*ul*/.nav {}
+<strong>/*ul*/.nav {}</strong>
       </pre>
       
-      <p>Comentando el elemento que lo lleva, dejamos que se pueda leer, pero evite la calificación y el aumento de la especificidad del selector.</p>
+      <p><strong>Comentando el elemento que lo lleva, dejamos que se pueda leer, pero evite la calificación y el aumento de la especificidad del selector</strong>.</p>
       
       
-      <h2>Naming</h2>
-      <p>Como dijo una vez Phil Karlton:</p> 
+      
+      
+      
+      <h2 class="color-esmeralda">Naming</h2>
+          
       <blockquote>"...sólo hay dos cosas duras en la Ciencias de la Computación: invalidación de caché y nombrar las cosas..."<cite> --Phil Karlton.</cite></blockquote>
-      <p>Mi consejo con respecto a nombrar las cosas en CSS es escoger un nombre sensible, pero que aspire a la máxima capacidad de reutilización. Por ejemplo, en lugar de una clase como <code>.site-nav</code>, elegir algo así como <code>.primary-nav</code> en lugar de <code>.footer-links</code>, favorecer a una clase como <code>.sub-links</code>.</p>
+      
+      <p>Para nombrar en CSS es escoger un nombre sensible, pero que aspire a la máxima capacidad de reutilización. Por ejemplo, en lugar de una clase como <code>.site-nav</code>, elegir algo así como <code>.primary-nav</code> en lugar de <code>.footer-links</code>, favorecer a una clase como <code>.sub-links</code>.</p>
+      
       <p>Las diferencias en estos nombres es que el primero de cada ejemplo está vinculado a un caso de uso muy específico: sólo se puede utilizar como la navegación del sitio o los enlaces de pie de página, respectivamente.</p>
+      
       <p>Mediante el uso de nombres más ambiguas, podemos aumentar nuestra capacidad de reutilizar estos componentes en diferentes circunstancias.</p>
-      <p>Para citar a Nicolas Gallagher:</p>
-      <blockquote>"...Atar la semántica de las clase estrechamente a la naturaleza del contenido ha reducido la capacidad de arquitectura a escala o de ser fácilmente utilizada por otros desarrolladores..." <cite> --Nicolas Gallagher</cite></blockquote>
-      <p>Es decir, debemos utilizar nombres coherentes de clases, pero hay que evitar el uso de clases que describen la naturaleza exacta de uso de contenido. <strong>El uso de un nombre de clase para describir el contenido es redundante ya que el contenido se describe a sí mismo.</strong></p>
-      <p>El debate en torno a la semántica se ha prolongado durante años, pero es importante que adoptemos un enfoque más pragmático, sensible a nombrar las cosas con el fin de trabajar de manera más eficiente y eficaz. En lugar de centrarse en «semántica», mira más de cerca a la sensibilidad y la longevidad, elegir nombres basado en la facilidad de mantenimiento, no por el significado percibido.</p>
-      <p>Nombrar las cosas para la gente; que son los únicos que realmente leen sus clases (todo lo demás simplemente les coincide). Una vez más, es mejor luchar por clases reutilizables, reciclables en lugar de escribir para casos de uso específicos. Tomemos un ejemplo:</p>
-      
-      <pre>
           
-/**
- * Runs the risk of becoming out of date; not very maintainable.
- */
-.blue {
-    color: blue;
-}
-
-/**
- * Depends on location in order to be rendered properly.
- */
-.header span {
-    color: blue;
-}
-
-/**
- * Too specific; limits our ability to reuse.
- */
-.header-color {
-    color: blue;
-}
-
-/**
- * Nicely abstracted, very portable, doesn’t risk becoming out of date.
- */
-.highlight-color {
-    color: blue;
-}
-      </pre>
+      <blockquote>"...Atar la semántica de las clase estrechamente a la naturaleza del contenido ha reducido la capacidad de arquitectura a escala o de ser fácilmente utilizada por otros desarrolladores..." <cite> --Nicolas Gallagher</cite></blockquote>
       
-      <p>Es importante encontrar un equilibrio entre los nombres que no describen literalmente el estilo que trae la clase, sino también a los que no se describen explícitamente los casos de uso específicos. En lugar de .home páginas de pantalla, seleccione .masthead; en lugar de .site-nav, favorecer .primary-nav; en lugar de .btn-entrada, optar por .btn-primaria.</p>
+      <p>Es decir, debemos utilizar nombres coherentes de clases, pero hay que evitar el uso de clases que describen la naturaleza exacta de uso de contenido. <strong>El uso de un nombre de clase para describir el contenido es redundante ya que el contenido se describe a sí mismo.</strong></p>
+      
+      <p>El debate en torno a la semántica se ha prolongado durante años, pero es importante que adoptemos un enfoque más pragmático, sensible a nombrar las cosas con el fin de trabajar de manera más eficiente y eficaz. En lugar de centrarse en "semántica", mira más de cerca a la sensibilidad y la longevidad, <strong>elegir nombres basado en la facilidad de mantenimiento, no por el significado percibido</strong>.</p>
+      
+      <p><strong>Nombrar las cosas para la gente</strong>. Una vez más, es mejor luchar por clases reutilizables, reciclables en lugar de escribir para casos de uso específicos.
+      
+      <p>Es importante encontrar un equilibrio entre los nombres que no describen literalmente el estilo que trae la clase.</p>
       
       
       
       
-      <h2>Nombrando Componentes de la Interfaz de Usuario</h2>
-      <p>Nombrar componentes con la reutilización en mente realmente ayuda a los desarrolladores a construir y modificar las interfaces de usuario mucho más rápidamente. Sin embargo, a veces puede ser beneficioso proporcionar denominación más específica o significativa junto a la clase más ambiguas, en particular cuando varias clases se unen para formar un componente más complejo y específico que podría beneficiarse de tener un nombre más significativo. En este escenario, aumentamos las clases con un atributo <strong>data-ui-component</strong> que alberga un nombre más específico, por ejemplo:</p>
+      <h2 class="color-esmeralda">Nombrando Componentes de la Interfaz de Usuario</h2>
+      <p>Nombrar componentes con la reutilización en mente realmente ayuda a los desarrolladores a construir y modificar las interfaces de usuario mucho más rápidamente.<br> 
+      Sin embargo, a veces puede ser beneficioso proporcionar denominación más específica o significativa junto a las clases más ambiguas, en particular cuando varias clases se unen para formar un componente más complejo y específico que podría beneficiarse de tener un nombre más significativo. En este escenario, aumentamos las clases con un atributo <strong>data-ui-component</strong> que alberga un nombre más específico, por ejemplo:</p>
       
       <pre>
           
 &lt;ul class="tabbed-nav" data-ui-component="Main Nav"&gt;
       </pre>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       <!------------------------------------------------------------------------->
       
