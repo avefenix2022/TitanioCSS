@@ -64,14 +64,14 @@
     <p>Las <strong>ventajas de la implementación desde un servicio de control de código</strong> fuente basado en la nube son:</p>
 
     <ul>
-        <li>Contar con un Control de versiones.</li>
+        <li>Contar con un <strong>controlador de versiones</strong>.</li>
         <li>Disponer de una <strong>implementación continua</strong> desde un repositorios Git.</li>
-        <li>Implementación específica por ramas, pudiendo implementar ramas diferentes en aplicaiones distintas.<br>
+        <li><strong>Implementación específica por ramas</strong>, pudiendo implementar ramas diferentes en aplicaciones distintas.<br>
         Toda la funcionalidad del motor de implementación de <strong>Kudu</strong> está disponible (por ejemplo, control de versiones de implementación, reversión, restauración de paquetes, automatización).</li>
         <li>La implementación continua representa una buena opción para los <strong>proyectos donde se integran contribuciones diversas y frecuentes</strong>.</li>
     </ul>
 
-    <p>Se crea una asociación con el repositorio, se extraen los archivos de la rama master y se mantiene un clon del repositorio para la aplicación. La integración usa el motor de implementación de <strong>Kudu</strong>, que ya automatiza las tareas de compilación e implementación con cada <strong>git push</strong>.</p>
+    <p><strong>Se crea una asociación con el repositorio, se extraen los archivos de la rama master y se mantiene un clon del repositorio para la aplicación</strong>. La integración usa el motor de implementación de <strong>Kudu</strong>, que ya automatiza las tareas de compilación e implementación con cada <strong>git push</strong>.</p>
     
     <p><strong>Referencias</strong>:</p>
 
@@ -152,35 +152,36 @@
       <div class="twelve column" style="margin-top: 8rem">
       
       <h1 class="color-salmon">BEM, OOCSS, y SMACSS</h1>
-      <p>BEM, OOCSS, y SMACSS surgieron como soluciones a problemas de mantenimiento de hojas de estilos CSS en grandes proyectos web, pero el concepto es aplicable a todo tipo de proyectos. El OOCSS de Nicole Sullivan es el más general y abstracto de los modelos y la metodología BEM son reglas demasiado estrictas (¿qué guión uso?). En el enfoque que plantea Jonathan Snook en SMACSS  la categorización de las reglas es intuitiva y la convención de nombres es sencilla.</p>
+      <p><strong>BEM, OOCSS, y SMACSS</strong> surgieron como soluciones a problemas de mantenimiento de hojas de estilos CSS en grandes proyectos web, pero el concepto es aplicable a todo tipo de proyectos. <br>El <strong>OOCSS</strong> de Nicole Sullivan es el más general y abstracto de los modelos. <br>La metodología <strong>BEM</strong> son reglas demasiado estrictas. <br>En el enfoque que plantea Jonathan Snook en <strong>SMACSS</strong>  la categorización de las reglas es intuitiva y la convención de nombres es sencilla.</p>
       
       
       
       
       
       <h2 class="color-esmeralda">OOCSS</h2>
-      <p>OOCSS (CSS orientado a objetos1) se basa en 2 principios:</p>
+      <p><strong>OOCSS (CSS orientado a objetos)</strong> se basa en 2 principios:</p>
       <ul>
-          <li><strong>Separación de estructura y estilo visual</strong>: definir los estilos visuales (por ej. color de fondo y estilo de borde) como “skins” que se pueden aplicar a diversos módulos.</li>
-          <li><strong>Separación de contenedor y contenido</strong>: evitar el selector descendiente, por ej. no usar .sidebar h3.</li>
+          <li><strong>Separación de estructura y estilo visual</strong>: definir los estilos visuales (por ejemplo color de fondo y estilo de borde) como “skins” que se pueden aplicar a diversos módulos.</li>
+          <li><strong>Separación de contenedor y contenido</strong>: evitar el selector descendiente, por ejemplo no usar .sidebar h3.</li>
       </ul>
-      <p>OCCSS promueve la creación de una librería de componentes re-utilizables dentro del mismo sitio o entre proyectos. Los componentes son independientes de la ubicación en la página, se comportan en forma predecible, son por lo tanto portables y se pueden combinar para extender un módulo base. Para que la cascada se comporte de manera predecible se usan selectores de clase.</p>
+      
+      <p><strong>OOCSS</strong> promueve la creación de una librería de <strong>componentes re-utilizables</strong> dentro del mismo sitio o entre proyectos. Los componentes son independientes de la ubicación en la página, se comportan en forma predecible, son por lo tanto portables y se pueden combinar para extenderlos. Para que la cascada se comporte de manera predecible <strong>se usan selectores de clase</strong>.</p>
       <p>Aplica el principio DRY (no te repitas) y por lo tanto produce CSS:</p>
       <ul>
-          <li>Escalable: se aplica a proyectos de cualquier tamaño.</li>
-          <li>Fácil de mantener: es una arquitectura transparente que sigue el principio de única responsabilidad. La arquitectura se refiere a qué selectores usás.</li>
-          <li>Rápido: Menos CSS = más velocidad.</li>
+          <li><strong>Escalable</strong>: se aplica a proyectos de cualquier tamaño.</li>
+          <li><strong>Fácil de mantener</strong>: es una arquitectura transparente.</li>
+          <li><strong>Rápido</strong>: Menos CSS = más velocidad.</li>
       </ul>
       
       
       
       
       <h2 class="color-esmeralda">BEM</h2>
-      <p>BEM (bloque, elemento, modificador) son una serie de principios desarrollados por la empresa de TI rusa Yandex para crear rápidamente sitios web fáciles de mantener en un período largo de tiempo.</p>
+      <p><strong>BEM (bloque, elemento, modificador)</strong> son una serie de principios desarrollados por la empresa de TI rusa Yandex para crear rápidamente sitios web fáciles de mantener en un período largo de tiempo.</p>
       <ul>
-          <li><strong>Bloque</strong>: es una entidad independiente. Puede ser simple o compuesto por otros bloques. Ej.: buscador (simple) o cabezal (compuesto).</li>
-          <li><strong>Elemento</strong>: parte de un bloque que cumple una función. Ej.: input y botón.</li>
-          <li><strong>Modificador</strong>: con un modificador se crea un bloque similar a otro existente. Por ej. para indicar un elemento activo de un menú, se usa un modificador.</li>
+          <li><strong>Bloque</strong>: es una entidad independiente. Puede ser simple o compuesto por otros bloques. Ejemplo: buscador (simple) o cabezal (compuesto).</li>
+          <li><strong>Elemento</strong>: parte de un bloque que cumple una función. Ejemplo: input y botón.</li>
+          <li><strong>Modificador</strong>: con un modificador se crea un bloque similar a otro existente. Por ejemplo para indicar un elemento activo de un menú, se usa un modificador.</li>
       </ul>
       
       
@@ -188,15 +189,21 @@
       
       
       <h2 class="color-esmeralda">SMACSS</h2>
-      <p>SMACSS (Arquitectura modular y escalable para CSS) es una guía de estilo escrita por Jonathan Snook un diseñador, desarrollador web y autor de The Art and Science of CSS publicado por SitePoint.</p>
+      <p><strong>SMACSS (Arquitectura modular y escalable para CSS)</strong> es una guía de estilo escrita por Jonathan Snook un diseñador, desarrollador web y autor de The Art and Science of CSS publicado por SitePoint.</p>
       <ul>
-          <li>Base: reglas básicas para elementos (o [atributos], pseudo-clases, etc.). Normalize.css es un ejemplo de reglas básicas.</li>
-          <li>Maquetación: define las secciones de una página (grilla).</li>
-          <li>Módulo: componentes re-usables y modulares.</li>
-          <li>Estado: cómo luce un módulo a través de diferentes estados, o sea clases que se agregan vía JavaScript (oculto/expandido, activo/inactivo) y a través de distintas vistas (homepage, página interior)</li>
-          <li>Tema: es lo que en OOCSS se le llama “skin”. En SMACSS es opcional, los estilos visuales pueden estar integrados a los módulos y estados o separados por tema para sitios en donde el usuario pueda elegir un tema, para sitios multi-lenguaje2, etc.</li>
+          <li><strong>Base</strong>: reglas básicas para elementos (o [atributos], pseudo-clases, etc.). Normalize.css es un ejemplo de reglas básicas.</li>
+          <li><strong>Maquetación</strong>: define las secciones de una página (regilla).</li>
+          <li><strong>Módulo</strong>: componentes re-usables y modulares.</li>
+          <li><strong>Estado</strong>: cómo luce un módulo a través de diferentes estados, o sea clases que se agregan vía JavaScript (oculto/expandido, activo/inactivo) y a través de distintas vistas (homepage, página interior).</li>
+          <li><strong>Tema</strong>: es lo que en OOCSS se le llama “skin”. En SMACSS es opcional, los estilos visuales pueden estar integrados a los módulos y estados o separados por tema para sitios en donde el usuario pueda elegir un tema, para sitios multi-lenguaje, etc.</li>
       </ul>
-      <p>La convención es nombrar las clases con un prefijo que indica la categoría. Los módulos no llevan prefijos y los sub-módulos llevan como prefijo el nombre del módulo padre.</p>
+      <p>La convención es:</p>
+      <ul>
+          <li>Nombrar las clases con un prefijo que indica la categoría.</li>
+          <li>Los módulos no llevan prefijos.</li>
+          <li>Los sub-módulos llevan como prefijo el nombre del módulo padre.</li>
+      </ul>
+          
       
       
       
@@ -204,10 +211,10 @@
       
       <h2 class="color-esmeralda">Arquitectura CSS</h2>
       <ul>
-          <li>Semántico vs Genérico: La arquitectura CSS tiene que ver con encontrar un punto intermedio entre semántico y genérico. Los nombres de las clases deben ser lo suficientemente claros para entender qué son, pero no tan específicos que no se puedan re-utilizar.</li>
-          <li>Diseño vs Refactorización: El diseño es un proceso creativo y cada sitio web es único. Podés empezar desde el primer día con la arquitectura CSS en mente, pero generalmente es un proceso porque necesitás tener una cierta cantidad de elementos del diseño definidos para poder abstraer patrones que se repiten. Una vez que el sitio web está online no deberías tener que refactorizar para agregar un nuevo componente.</li>
-          <li>Único vs Re-usable: Que diseñes sitios web a medida no significa que tengas que resolver los mismos problemas una y otra y otra y otra vez.</li>
-          <li>Nombres vs Mantenimiento: Durante el desarrollo tener una guía de cómo nombrar objetos te sirve para no perder tiempo pensando en qué nombre de clase le pongo al título del formulario. Los nombres de clase con prefijos son útiles para el mantenimiento porque es muy obvio saber a qué van a afectar y podés introducir un objeto nuevo con la seguridad de que no vas a alterar uno existente.</li>
+          <li><strong>Semántico vs Genérico</strong>: La arquitectura CSS tiene que ver con encontrar <strong>un punto intermedio entre semántico y genérico</strong>. <br><strong>Los nombres de las clases deben ser lo suficientemente claros para entender qué son, pero no tan específicos que no se puedan re-utilizar</strong>.</li>
+          <li><strong>Diseño vs Refactorización</strong>: El diseño es un proceso creativo y cada sitio web es único. Se puede empezar desde el primer día con la arquitectura CSS en mente, pero generalmente es un proceso laborioso porque <strong>se necesita tener una cierta cantidad de elementos del diseño definidos para poder abstraer patrones que se repiten</strong>. <br>Una vez que <strong>el sitio web está online no deberías tener que refactorizar para agregar un nuevo componente</strong>.</li>
+          <li><strong>Único vs Re-usable</strong>: Que se diseñe sitios web a medida no significa que tengan que resolver los mismos problemas una y otra vez.</li>
+          <li><strong>Nombres vs Mantenimiento</strong>: Durante el desarrollo tener <strong>una guía de cómo nombrar objetos te sirve para no perder tiempo pensando en qué nombre de clase le pongo</strong> al título del formulario. Los nombres de clase con prefijos son útiles para el mantenimiento porque es muy obvio saber a qué van a afectar y se puede introducir un objeto nuevo con la seguridad de que no vas a alterar uno existente.</li>
       </ul>
       
       
@@ -216,9 +223,11 @@
       <h2 class="color-esmeralda">Frameworks basados en BEM, OOCSS y SMACSS</h2>
       <p>Estos frameworks son ejemplos de aplicaciones de los conceptos de BEM, OOCSS y SMACSS. inuit no tiene diseño, es solamente una colección de objetos CSS. Pure y Topcoat soportan temas personalizados.</p>
       <ul>
-          <li>inuit.css es un framework open source que sigue la convención de nombres BEM y los principios OOCSS desarrollado Harry Roberts, un joven desarrollador web y arquitecto front-end. Es un framework modular que consiste en una serie de objetos y abstracciones, no de elementos de diseño como Bootstrap. “Generic” incluye normalize.css, el clearfix, etc. “Base” son reglas básicas para títulos, tablas y otros elementos. Finalmente “Objects” es la parte más interesante, con los objetos CSS con código profusamente comentado. inuit está desarrollado en Sass, podés modificar las variables y extenderlo con tu propia UI.</li>
-          <li>Pure: de Yahoo! consiste en una serie de módulos según se definen en SMACSS. Así como en otros frameworks podés modificar variables, en Puere podés construir una skin en un editor visual.</li>
-          <li>Topcoat de Adobe es un framework CSS para aplicaciones web basada en la arquitectura BEM y enfocada en el rendimiento. Automáticamente genera una guía de estilos, incluye archivos PSD, una colección de iconos en formato SVG y la fuente Adobe Source Sans Pro.</li>
+          <li><strong>inuit.css</strong> es un framework open source que <strong>sigue la convención de nombres BEM y los principios OOCSS</strong> desarrollado Harry Roberts, un joven desarrollador web y arquitecto front-end. Es un framework modular que <strong>consiste en una serie de objetos y abstracciones</strong>, no de elementos de diseño como Bootstrap. <strong>"Generic"</strong> incluye normalize.css, el clearfix, etc. <strong>"Base"</strong> son reglas básicas para títulos, tablas y otros elementos. Finalmente <strong>"Objects"</strong> es la parte más interesante, con los objetos CSS con código profusamente comentado. inuit está <strong>desarrollado en Sass</strong>, se pueden modificar las variables y extenderlo con tu propia UI.</li>
+          
+          <li><strong>Pure</strong>: de Yahoo! consiste en una serie de <strong>módulos según se definen en SMACSS</strong>. Así como en otros frameworks se puede modificar variables, en Puere se puede construir una skin en un editor visual.</li>
+          
+          <li><strong>Topcoat</strong> de Adobe es un framework CSS para aplicaciones web <strong>basada en la arquitectura BEM</strong> y enfocada en el rendimiento. <strong>Automáticamente genera una guía de estilos, incluye archivos PSD, una colección de iconos en formato SVG y la fuente Adobe Source Sans Pro</strong>.</li>
       </ul>
       
       
