@@ -563,8 +563,8 @@
       
       
       <h2 class="color-esmeralda">CSS Multi-línea</h2>
-      <p>El CSS debe ser escrito en <strong>múltiples líneas</strong>, excepto en circunstancias muy específicas.<br>
-      <strong>Hay ventajas para esto, como con conjuntos de reglas similares, que solo llevan una declaración, por ejemplo</strong>:</p>
+      <p>El CSS debe ser escrito en <strong>múltiples líneas</strong></p>
+       <p>Excepto en circunstancias muy específicas <strong> como conjuntos de reglas similares, que solo llevan una declaración, por ejemplo</strong>:</p>
       
       <pre>
 
@@ -1145,9 +1145,20 @@ ul.nav {}
       
       <ul>
           <li>El código debe de ser y parecer limpio.</li>
+          <li>Hacer un uso intensivo de las .clases.</li>
+          <li>La idea de reutilización es de suma importancia.</li>
+          <li>Todo lo que elija, desde el tipo de selector a su nombre, debería prestarse a ser reutilizado.</li>
+          <li>La reducción, o idealmente la eliminación de las dependencia de la ubicación significa que podemos mover los componentes con más libertad.</li>
+          <li>Podemos proporcionar esa información sin tener que calificar el selector.</li>
+          <li>Comentando el elemento que lo lleva, dejamos que se pueda leer, pero evite la calificación y el aumento de la especificidad del selector.</li>
+          
+          <li>Elegir nombres basado en la facilidad de mantenimiento, no por el significado percibido.</li>
+          <li>Nombrar las cosas para la gente.</li>
+          
           <li>(4) espacios para indentar, no tabular.</li>
           <li>Columna de 80 caracteres de ancho.</li>
           <li>CSS multilínea.</li>
+          <li>Se puede codificar en una sola línea cuando proporciona mejor información por simplicidad y comparación .</li>
           <li>Orden alfabético.</li>
           <li>Dos columnas una para la propiedad y otra para el valor.</li>
           <li>Uso de espacios en blanco para facilitar la lectura.</li>
@@ -1171,7 +1182,38 @@ ul.nav {}
           <li>Un punto y coma (;) al fina de nuestra última declaración (aunque no sea obligatoria).</li>
           <li>Los valores siempre con unidades incluso los de valor '0'.</li>
           
+          <li>Sangrar selectores con sus declaraciones para indicar relaciones entre ellos.</li>
+          <li>La anidación en Sass debe evitarse siempre que sea posible, por especificidad.</li>
+          <li>Cuando sangramos en Sass, nos ceñimos a los mismos cuatro (4) espacios, y también dejar una línea en blanco antes y después del conjunto de reglas anidadas.</li>
           
+          <li>Alinear cadenas idénticas y relacionadas en las declaraciones.</li>
+          
+          <li>Una (1) línea vacía entre los conjuntos de reglas estrechamente relacionados.</li>
+          <li>Dos (2) líneas vacías entre los conjuntos de reglas vagamente relacionados.</li>
+          <li>Cinco (5) líneas vacías entre secciones.</li>
+          
+          <li>Al escribir varios valores en un atributo de clase, hay que separarlos con dos (2) espacios.</li>
+          <li>Cuando hay varias clases que están relacionadas entre sí, podrá agruparlas entre corchetes ([ y ]).</li>
+          <li>denotar descansos temáticos en el contenido con cinco (5) líneas vacías</li>
+          <li>Para fragmentos independientes, pero vagamente relacionados el marcado es con una sola línea en blanco</li>
+          
+          <li>Comentar cualquier cosa que no sea evidente a partir solo del código.</li>
+          <li>En el entorno de producciónno deben de aparecer estos comentarios.</li>
+          <li>Todos los CSS deben de ser minificados.</li>
+          
+          <li>Nombres muy útilies para hacer el código más estricto, transparente e informativo.</li>
+          <li>El nombre debe de comunicarqué tipo de cosa hace la clase, dónde la clase debe de ser utilizada. Con qué una clase podría estar realcionada.</li>
+          
+          <li>La convención de nombres: un guión (-) para delimitar cadenas, y con la denominación BEM para piezas más complejas de código.</li>
+          <li>Camel case y guiones bajos no deben ser utilizados</li>
+          <li>la metodología BEM sólo nos interesa su convención de nombres</li>
+          
+          <li>Fijado correctamente el alcance de nuestros selectores, y que estamos seleccionando las cosas correctas por las razones correctas.</li>
+          <li>Decidir y definir lo que quiere el estilo y cómo va a seleccionarlo.</li>
+          <li>Seleccionando explícitamente lo correcto, exactamente por la razón correcta.</li>
+          <li>Los selectores deben ser lo más explícitos posible y bien razonado como tu razón para querer seleccionar algo.</li>
+          
+          <li>Aumentamos las clases con un atributo data-ui-component que alberga un nombre más específico.</li>
       </ul>
       
       
