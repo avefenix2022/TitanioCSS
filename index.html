@@ -1138,7 +1138,104 @@ ul.nav {}
       
       
       
-      
+       <h2 class="color-esmeralda">Eficacia del Selector</h2>
+    <p>
+    Un tema, que es, más interesantes queimportante, es el rendimiento del selector. Es decir, 
+    la rapidez con que un navegador puede identificar los selectores CSS con los nodos que encuentra en el DOM.
+    </p>
+    
+    <p>
+    Generalmente, cuanto más largo es un selector más lento es, por ejemplo:
+    </p>
+
+    <pre>
+    body.home div.header ul { }
+    </pre>
+ 
+    </p>
+    ... es mucho más lento que un selector como:
+    <p>
+
+    <pre>
+    .primary-nav { }
+    </pre>
+
+    <p>
+    Esto se debe a que los navegadores leen los selectores CSS de derecha a izquierda. Un navegador leerá el primer ejemplo de los dos anteriores selectores como:
+    </p>
+    
+    <ul>
+        <li>encontrar todos los elementos ul en el DOM,</li>
+        <li>ahora comprueba si conviven dentro de un elemento con una clase <code>.header</code>,</li>
+        <li>la siguiente comprobación es que existe la clase <code>.header</code> en un elemento <code>div</code>,</li>
+        <li>ahora comprobueba que conviven en cualquier lugar dentro de un elemento con una clase <code>.home</code>,</li>
+        <li>por último, comprueba que existe .home en un elemento <code>body</code>.</li>
+    </ul>
+
+    <p>
+    El segundo, por lo contrario, es simplemente un caso lectura del navegador.
+    </p>
+    
+    <ul>
+        <li>encontrar todos los elementos con una clase .primary-nav.</li>
+    </ul>
+
+    <p>
+    Para complicar aún más el problema, estamos utilizando los selectores descendientes 
+    (por ejemplo <code>.foo .bar {}</code>). El resultado de esto es que se requiere recorrer el DOM 
+    empezando con la parte más a la derecha del selector (es decir <code>.bar</code>) y seguir buscando 
+    en el DOM de forma indefinida hasta que encuentra la siguiente parte (es decir <code>.foo</code>). 
+    Esto podría significar intensificar muchas veces recorrer el DOM hasta que 
+    se encuentra una coincidencia.
+    </p>
+
+    <p>
+    Esta es sólo una razón por la que <strong>la anidación con preprocesadores es a menudo una falsa economía</strong>, al crear dependencia de la ubicación, 
+    y también crea más trabajo para el navegador.
+    </p>
+
+
+
+
+
+
+
+ <h2 class="color-esmeralda">El Selector Llave</h2>
+
+    <p>
+    Dado que los navegadores leen los selectores de derecha a izquierda, el selector de la derecha 
+    es a menudo crucial en la definición de la actuación de un selector: se llama el <strong>selector llave</strong>.
+    </p>
+
+    <pre>
+    #foo * { }
+    </pre>
+
+    <p>
+    El problema con este selector es que el selector de llave (*) tiene muy, muy largo alcance. Lo que realmente hace 
+    este selector es encontrar cada nodo individual en el DOM (incluso title, link, head y todo) y después mira para ver 
+    si vive en cualquier lugar en cualquier nivel dentro <code>#foo</code>. Este es un selector muy, muy caro, y debe muy probablemente evitar o reescrito.
+    </p>
+
+    <p>
+    Afortunadamente, escribiendo selectores con una buena intención de selección, es probable que estemos evitando selectores ineficientes de forma predeterminada; 
+    es muy poco probable que tenga selectores de llave codiciosos si focalizamos en lo correcto por la razón correcta.
+    </p>
+
+    <p>
+    Dicho esto, sin embargo, el rendimiento del selector CSS debe estar al final en su lista de cosas para optimizar; los navegadores son rápidos, y son siempre 
+    cada vez más rápido, y es sólo en casos extremos que los selectores ineficientes puedan llegar a suponer un problema.
+    </p>
+
+    <p>
+    Así como sus propios problemas específicos, la anidación, la calificación y la mala intención del selección, todo contribuye a selectores menos eficientes.
+    </p>
+
+
+
+
+     
+     
       
       <!------------------------------------------------------------------------->
       

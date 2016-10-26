@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+     
+      <div class="twelve column" style="margin-top: 25%">
+       
+        
+        <h1>Marcado HTML5</h1>
+        <h2>Sintaxis</h2>
+        <p>HTML5 no es una evolución del XHTML, por ese motivo ya no tenemos reglas estrictas de sintaxis del XHTML.</p>
+        <h3>Comillas</h3>
+        <p>Podemos utilizar las tres sintaxis siguientes:</p>
+        
+        <pre>
+        
+&lt;meta charset="utf-8"&gt;
+&lt;meta charset='utf-8'&gt;
+&lt;meta charset=utf-8&gt;      
+        </pre>
+        
+        <p>Es válida la sintaxis con comillas dobles, comillas simples y sin comillas.</p>
+        <p>Si un atributo tiene varios valores, será obligatorio el uso de comillas dobles:</p>
+        
+        <pre>
+            
+&lt;div class="estilo1 estilo2"&gt;
+        </pre>
+        
+        <h3>Elementos con una única etiqueta de apertura</h3>
+        <p>Los elementos img, br, etc en HTML5 no ex necesitan indicar el cierre de las etiquetas:</p>
+        
+        <pre>
+            
+&lt;br&gt;
+&lt;img src="imagen.jpg"&gt;
+        </pre>
+        
+        <h3>Los elementos con etiquetas de cierre facultativa</h3>
+        <p>No es necesario incluir el cierre en ciertas etiquetas como &lt;p&gt;, sería válido:</p>
+        
+        <pre>
+            
+&lt;p&gt;Mi párrafo sin etiqueta de cierre
+        </pre>
+        
+        <h3>Mayúsculas y minúsculas</h3>
+        <p>HTML5 acepta sin problemas las mayúsculas y las minúsculas en la sintaxis y de los atributos:</p>
+        
+        <pre>
+            
+&lt;SCRIPT SRC="miScript.js"&gt;
+&lt;script src="MIscript.js"&gt;
+&lt;ScRiPt SrC="MiScript.js"&gt;   
+        </pre>
+        
+        <h3>Atributos boleanos</h3>
+        <p>En HTML5 la simple presencia del atributo es suficiente, asi frente a: <br>
+        &lt;input type="checkbox" checked="checked" name="checkbox"&gt;, ahora es válido:
+        </p>
+        
+        <pre>
+            
+&lt;input type="checkbox" checked name="checkbox"&gt;
+        </pre>
+        
+        <h3>Elementos HTML, HEAD y BODY</h3>
+        <p>No es obligatorio incluir las etiquetas html, head y body.</p>
+        
+        <h2>Sintaxis recomendada</h2>
+        <p>Se recomienda que se respete la sintaxis XHTML:</p>
+        <ul>
+            <li>usar solamente minúsculas</li>
+            <li>usar siempre comillas</li>
+            <li>cerrar con / las etiquetas que se autocierran</li>
+            <li>para aumentar la legibilidad sangrar el código</li>
+        </ul>
+        
+        
+        
+        
+        <h2>Etiquetas de estructura de un documento HTML5</h2>
+        <h3>&lt;!DOCTYPE html&gt;</h3>
+        <p>Definición del tipo de documento para HTML5</p>
+        <ul>
+            <li>Debe de ser la primera línea.</li>
+            <li>No debe de haber espacios en blanco antes de ella.</li>
+        </ul>
+        
+        <h3>&lt;html&gt;</h3>
+        <p>Elemento raiz de un documento HTML.</p>
+        <p>El atributo <code>lang</code> define el idioma que se utiliza para el contenido del documento.</p>
+        
+        <pre>
+            
+&lt;html lang="es"&gt;
+        </pre>
+        
+        <h3>&lt;head&gt;</h3>
+        <p>Cabecera. Contiene información sobre el documento que no se mostrará en la ventana del navegador.</p>
+        
+        <h3>&lt;body&gt;</h3>
+        <p>Cuerpo. Contiene la parte visible que se mostrará en la ventana del navegador.</p>
+        
+        <h3>&lt;meta&gt;</h3>
+        <p>Metadatos. Las etiquetas meta se situan en el head.</p>
+        
+        <pre>
+
+       
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="keywords" content="HTML, CSS"&gt;
+&lt;meta name="description" content="Lenguaje de marcado semántico HTML5"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;  
+<del>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</del> Si utilizas el doctype de HTML5, la página ya se mostrará automáticamente en el modo de compatibilidad de Internet Explorer IE=edge.    
+        </pre>
+        
+        <h3>La etiqueta meta viewport</h3>
+        
+        <h4>Tamaño de las pantallas de los móviles</h4>
+        <p>Las pantallas de los dispositivos móviles, smartphones y tabletas tiene la particularidad de no tener ventana para las aplicaciones. No tenemos una vantana de navegador.</p>
+        <p>Para acceder al ancho "físico", real, de las pantallas, está la propiedad <code>width</code>.</p>
+        <p>En el sitio <a href="http://screensiz.es/phone">screensiz</a> podemos consulatr las dimensiones de pantalla de algunos smartphones.</p>
+        <p>La propiedad <code>device-width</code> da acceso al ancho en píxeles que "piensa tener" los smartphones. Ponemos "piensa tener" entre comillas ya que los smartphones que tienen pantallas de alta resolución, com las pantallas Retina de Apple, utilizan valores distintos.</p>
+        <p>Por ejemplo para los iPhone 5 de pantalla Retina que tienen un ancho <code>width</code> de 640 px y ancho <code>device-width</code> de 320 px.</p>
+        
+        <h4>El concepto viewport</h4>
+        <p>Apple cuando saco el iPhone y su navegador Safari Mobile, introdujo una noción de visualización particular: al abrir una página con Safari Mobile está aparece con 980 px de ancho y un zoom para adaptarse al ancho que supuestamente está disponible <code>device-width</code>, a saber 320 px. <br>Como consecuencia directa de esto el sitio aparece en miniatura.</p>
+        <p>Para evitar este efecto desagradable Apple propuso el atributo <code>viewport</code> dentro de la etiqueta meta, que actualmente se ha convertido en un estándar.</p>
+        <p>La norma es que las dimensiones del viewport sean más pequeñas que las dimensiones reales de la pantalla del dispositivo.</p>
+        <p>El viewport permite configurar cómo va a interpretar el navegador las dimensiones de la página correspondiente.</p>
+        
+        <h4>Sintaxis y propiedades</h4>
+        <p>El <strong>viewport</strong> se declara en la cabecera del documento.</p>
+        
+        <pre>
+            
+&lt;meta name="<strong>viewport</strong>" content="<strong>propiedades</strong>"&gt; 
+        </pre>
+        
+        <p>Las propiedades:</p>
+        <ul>
+            <li><strong>width</strong>: define el ancho que tomará la página del dispositivo. Se puede expresar en px o usar <code>device-width</code> para tomar como anchura la del propio dispositivo.</li>
+            <li><strong>height</strong>: definela altura.</li>
+            <li><strong>initial-scale</strong>: indica la escala inicial a la que se mostrará la página. Su valor puede ser un número real desde 0.1 en adelante. Un valor de 1 indicará que la web no sufre ningún escalado, se muestra al 100% de su tamaño.</li>
+            <li><strong>minimum-scale</strong> y <strong>maximum-scale</strong>: define los valores máximo y mínimo de escala que se permiten. Será un número real que irá de 0.1 en adelante.</li>
+            <li><strong>user-scalable</strong>: define el permiso para hacer o no zoom y escalar el contenido. Acepta los valores yes/no.</li>
+        </ul>
+        
+        <p>una posible declaración puede ser:</p>
+        
+        <pre>
+
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;   
+        </pre>
+        
+        <h4>Regla de estilo @viewport</h4>
+        <p>Referencia: <a href="https://developer.mozilla.org/es/docs/Web/CSS/@viewport">@viewport</a></p>
+        <p>La regla de CSS @viewportcontiene un conjunto de descriptores anidados en un bloque de CSS que está delimitado por llaves. Estos descriptores controlan la configuración de la ventana gráfica, principalmente en los dispositivos móviles.</p>
+        
+        <ul>
+            <li><strong>min-width</strong>: Se utiliza en la determinación de la anchura de la ventana cuando se muestra por primera vez el documento.</li>
+            <li><strong>max-width</strong>: Se utiliza en la determinación de la anchura de la ventana cuando se muestra por primera vez el documento.</li>
+            <li><strong>with</strong>: Un descriptor de forma rápida para establecer tanto min-width y max-width</li>
+            <li><strong>min-height</strong>: Se utiliza en la determinación de la altura de la ventana cuando se muestra por primera vez el documento.</li>
+            <li><strong>max-height</strong>: Se utiliza en la determinación de la altura de la ventana cuando se muestra por primera vez el documento.</li>
+            <li><strong>height</strong>: Una descripción abreviada para establecer tanto min-height y max-height</li>
+            <li><strong>zoom</strong>: Establece el factor de zoom inicial. Un valor  a partir de 0.1 o en %.</li>
+            <li><strong>min-zoom</strong>: Establece el factor de zoom mínimo.</li>
+            <li><strong>max-zoom</strong>: Establece el factor de zoom máximo.</li>
+            <li><strong>user-zoom</strong>: Controla si o no el usuario debe ser capaz de cambiar el factor de zoom: zoom o fixed</li>
+            <li><strong>orientation</strong>: Controla la orientación del documento: auto, portrait o landscape;</li>
+        </ul>
+
+
+        
+        
+        <h2>Etiquetas</h2>
+        <h3>&lt;time&gt;</h3>
+        <p>Indica que <strong>su contenido está relacionado con el factor fecha/hora</strong>.</p>
+        
+        <pre>
+            
+&lt;p&gt;La fecha de hoy es: &lt;time&gt;25/02/2016&lt;/time&gt;&lt;/p&gt;
+        </pre>
+        
+        <p>Ejemplo:</p>
+        <p>La fecha de hoy es: <time>25/02/2016</time></p>
+        
+        <h3>&lt;mark&gt;</h3>
+        <p><strong>Resalta un texto.</strong></p>
+        
+        <pre>
+            
+&lt;p&gt;La nueva versión del lenguaje HTML es: &lt;mark&gt;HTML5&lt;/mark&gt;&lt;/p&gt;
+        </pre>
+        
+        <p>Ejemplo:</p>
+        <p>La nueva versión del lenguaje HTML es: <mark>HTML5</mark></p>
+        
+        <h3>&lt;meter&gt;</h3>
+        <p><strong>Define una medida determinada dentro de un contexto de valores especificos.</strong></p>
+        <ul>
+            <li>value: el valor del dato en la escala utilizada.</li>
+            <li>min: el mínimo posible.</li>
+            <li>low: el mínimo alcanzado.</li>
+            <li>max: el máximo posible.</li>
+            <li>hight: el máximo alcanzao.</li>
+            <li>optimum: el valor mínimo ideal.</li>
+        </ul>
+        
+        <pre>
+            
+&lt;p&gt;Usted ha optenido una nota de 8 sobre 10: &lt;meter value="8" min="0" low="4" max="10" hight="8" optimum="9"&gt;&lt;/p&gt;
+        </pre>
+        
+        <p>Ejemplo:</p>
+        <p>Usted ha optenido una nota de 8 sobre 10: <meter value="8" min="0" low="4" max="10" hight="8" optimum="9"></p>
+        
+        <h3>&lt;details&gt; y &lt;summary&gt;</h3>
+        <p>El elemento &lt;summary&gt; permite presentar un resume de la información que se facilita con el elemento &lt;details&gt;.</p>
+        
+        <pre>
+            
+&lt;details&gt;
+    &lt;summary&gt;Haga clic para consultar todos los detalles de su pedido.&lt;/summary&gt;
+    &lt;p&gt;Estos son los detalles de su pedido.&gt;&lt;/p&gt;
+    &lt;p&gt;Y bla bla bla...&gt;&lt;/p&gt;   
+&lt;/details&gt;
+        </pre>
+        
+        <p>Ejemplo:</p>
+        <details>
+            <summary>Haga clic para consultar todos los detalles de su pedido.</summary>
+            <p>Estos son los detalles de su pedido.</p>
+            <p>Y bla bla bla...</p>   
+        </details>
+        
+        <h3>&lt;wbr&gt;</h3>
+        <p>El elemento &lt;wbr&gt; permite proponer cesuras dentro de la palabra o frase.</p>
+        
+        <pre>
+            
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis expedita nemo, distinctio illo harum officiis nam similique nulla tempore iusto eos suntvolup&lt;wbr&gt;tatumipsa consecteturrerum perspi&lt;wbr&gt;ciatisdoloribus recusandae sapiente..&gt;&lt;/p&gt;
+        </pre>
+        
+        <p>Ejemplo:</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis expedita nemo, distinctio illo harum officiis nam similique nulla tempore iusto eos suntvolup<wbr>tatumipsa consecteturrerum perspi<wbr>ciatisdoloribus recusandae sapiente..</p>
+        
+        <h3>&lt;bdo&gt;</h3>
+        <p>El elemento &lt;bdi&gt; permite aislar un texto que tenga una dirección de lectura diferente.</p>
+        
+        <pre>
+            
+&lt;ul&gt;
+    &lt;li&gt;Redactor &lt;bdo&gt;abcdef&lt;/bdo&gt;: 12 artículos.&lt;/li&gt;
+    &lt;li&gt;Redactor &lt;bdo dir="rtl"&gt;abcdef&lt;/bdo&gt;: 12 artículos.&lt;/li&gt;
+    &lt;li&gt;Redactor &lt;bdo dir="ltr"&gt;abcdef&lt;/bdo&gt;: 12 artículos.&lt;/li&gt;
+&lt;/ul&gt;
+        </pre>
+        
+        <p>Ejemplo:</p>
+        <ul>
+            <li><bdo>abcdef</bdo></li>
+            <li>rtl <bdo dir="rtl">abcdef</bdo></li>
+            <li>ltr <bdo dir="ltr">abcdef</bdo></li>
+        </ul>
+        
+        <h3>&lt;progress&gt;</h3>
+        <p>Permite crear barras de progreso para las tareas.</p>
+        
+        <pre>
+            
+&lt;h2&gt;Tarea&lt;/h2&gt;
+&lt;p&gt;Progresión de la tarea: &lt;progress id="p" value="40" max="100"&gt;40&lt;/progress&gt;&lt;/p&gt;
+        </pre>
+        
+        <p>Ejemplo:</p>
+        <p>Tarea</p>
+        <p>Progresión de la tarea: <progress id="p" value="40" max="100">40</progress></p>
+        
+        <h3>&lt;figure&gt; y &lt;figcaption&gt;</h3>
+        <p>&lt;figure&gt; permite agrupar el elemento imagen &lt;img&gt; y su leyenda &lt;figcaption&gt;</p>
+        
+        <pre>
+            
+&lt;p&gt;Fotografia BMW RR&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src="img/bmwrr.jpg" alt="bmwrr"&gt;
+    &lt;figcaption&gt;BMW RR&lt;/figcaption&gt;
+&lt;/figure&gt;
+        </pre>
+        
+        <p>Fotografia BMW RR</p>
+        <figure>
+            <img src="img/bmwrr.jpg" alt="bmwrr">
+            <figcaption>BMW RR</figcaption>
+        </figure>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <h2>Plantillas para sitios web en HTML5</h2>
+        <h3>Plantilla ArchiteXture</h3>
+        <a href="https://www.freehtml5templates.com/template/architexture/">ArchiteXture</a>
+        <p>(<a href="https://www.freehtml5templates.com">freehtml5templates</a>)</p>
+        
+        
+        
+      </div><!-- FIN TWELVE COLUMN -->
+      
+    </div><!-- FIN ROW -->
+  </div><!-- FIN CONTAINER -->
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
