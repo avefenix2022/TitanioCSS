@@ -1,6 +1,8 @@
 body {
     font-family:         'Lato';
     font-weight:         300;
+    margin: 0;
+    padding: 0;
 }
 
 #cover {
@@ -8,7 +10,7 @@ body {
     width:               100%;
     background:          #ccc;
     
-   background-image:    url(../images/bg.jpg);
+    background-image:    url(../images/bg.jpg);
 
   
     background-repeat:   no-repeat;
@@ -17,8 +19,6 @@ body {
     
     display:             flex;
     flex-direction:      column;
-    justify-content:     flex-end;
-    align-items:         center;
     
     position:            absolute;
     z-index:             1000;
@@ -26,14 +26,50 @@ body {
     transition:          all .4s;
 }
 
+#cover a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.arriba {
+    flex: 1;
+    height: 50vh;
+    
+    display:             flex;
+    flex-direction:      column;
+    align-items:         center;
+    justify-content:     flex-end;
+    box-sizing:          border-box;
+    padding-bottom:      30px;
+}
+
+.arriba h1 {
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.abajo {
+    flex: 1;
+    height: 50vh;
+    
+    display:             flex;
+    flex-direction:      column;
+    align-items:         center;
+    justify-content:     flex-end;
+    box-sizing:          border-box;
+    padding-bottom:      30px;
+}
+
+.abajo span {
+    font-size:  60px;
+}
+
 #cover:target {
     transform: translateY(-100vh);
 }
 
-#cover .flecha {
-    color: rgba(255, 255, 255, 1);
-    font-size: 30px;
-}
+
 
 
 
@@ -45,11 +81,108 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 50vh;
+    height: 100vh;
     width: 100%;
-    background: #ccc;
+    background: #eee;
+    margin: 0;
+    padding: 0;
+}
+#grid > nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #eee;
+    margin: 0;
+    padding: 0;
+}
+#grid > nav > section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #eee;
+    margin: 0;
+    padding: 0;
 }
 
+#grid ul {
+    list-style: none;
+    
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+#grid ul li {
+    flex: 1;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid ul li a {
+    display: block;
+
+}
+
+#grid ul li:first-child {
+    background-color: rgba(200, 100, 100, 1);
+}
+
+
+
+
+#grid ul li:nth-child(2) {
+    background-image: url(../images/bg.jpg);
+    
+    
+    transform: scale(.5);
+    transition: all .7s;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: #fff;
+    
+    
+}
+
+#cover:target + #grid ul li:nth-child(2) {
+    transform: scale(1);
+}
+
+#grid ul li:nth-child(3)  { background-image: url(../images/grid3.jpg); }
+#grid ul li:nth-child(4)  { background-image: url(../images/grid4.jpg); }
+#grid ul li:nth-child(5)  { background-image: url(../images/grid5.jpeg); }
+#grid ul li:nth-child(6)  { background-image: url(../images/grid6.jpg); }
+#grid ul li:nth-child(7)  { background-image: url(../images/grid7.jpeg); }
+#grid ul li:nth-child(8)  { background-image: url(../images/grid8.jpeg); }
+#grid ul li:nth-child(9)  { background-image: url(../images/grid9.jpeg); }
+#grid ul li:nth-child(10) { background-image: url(../images/grid10.jpeg); }  
+#grid ul li:last-child    { background-image: url(../images/grid11.jpeg); }
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+    
+    
+    
+    
 #grid ul {
     list-style: none;
 }
@@ -58,13 +191,22 @@ body {
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: center;
+    background-position: center;
 }
 
-#grid ul li:first-child{
+#grid ul li:first-child {
     width: 25%;
-    height: 50%;
+    height: 25%;
     top: 0;
+    left: 0;
+    background-image: url(../images/grid1.jpg);
+}
+
+
+#grid ul li:nth-child(2) {
+    width: 25%;
+    height: 25%;
+    top: 25%;
     left: 0;
     background-image: url(../images/bg.jpg);
     
@@ -72,23 +214,14 @@ body {
     transform: scale(.5);
     transition: all .7s;
 }
-
-#cover:target + #grid ul li:first-child{
+    
+#cover:target + #grid ul li:nth-child(2) {
     transform: scale(1);
 }
 
-
-#grid ul li:nth-child(2){
+#grid ul li:nth-child(3) {
     width: 25%;
     height: 50%;
-    top: 50%;
-    left: 0;
-    background-image: url(../images/grid1.jpg);
-}
-
-#grid ul li:nth-child(3){
-    width: 25%;
-    height: 100%;
     top: 0;
     left: 25%;
     background-image: url(../images/grid3.jpg);
@@ -97,38 +230,78 @@ body {
     background-size: center;
 }
 
-#grid ul li:nth-child(4){
+#grid ul li:nth-child(4) {
     width: 50%;
-    height: 50%;
+    height: 25%;
     top: 0;
     left: 50%;
     background-image: url(../images/grid4.jpg);
     background-position: center center;
 }
 
-#grid ul li:nth-child(5){
+#grid ul li:nth-child(5) {
     width: 25%;
-    height: 50%;
-    top: 50%;
+    height: 25%;
+    top: 25%;
     left: 50%;
     background-image: url(../images/grid5.jpeg);
 }
 
-
-#grid ul li:last-child{
+#grid ul li:nth-child(6) {
     width: 25%;
-    height: 50%;
-    top: 50%;
+    height: 25%;
+    top: 25%;
     left: 75%;
     background-image: url(../images/grid6.jpg);
 }
 
-main {
-    position: absolute;
-    top: 50vh;
-    left: 0;
-    background: #ccc;
+#grid ul li:nth-child(7) {
+    width: 25%;
+    height: 50%;
+    top: 50%;
+    left: 0%;
+    background-image: url(../images/grid7.jpeg);
 }
+
+#grid ul li:nth-child(8) {
+    width: 50%;
+    height: 25%;
+    top: 50%;
+    left: 25%;
+    background-image: url(../images/grid8.jpeg);
+}
+
+#grid ul li:nth-child(9) {
+    width: 25%;
+    height: 25%;
+    top: 75%;
+    left: 25%;
+    background-image: url(../images/grid9.jpeg);
+}
+    
+
+#grid ul li:nth-child(10) {
+    width: 25%;
+    height: 25%;
+    top: 50%;
+    left: 75%;
+    background-image: url(../images/grid10.jpeg);
+}
+        
+#grid ul li:last-child {
+    width: 50%;
+    height: 25%;
+    top: 75%;
+    left: 50%;
+    background-image: url(../images/grid11.jpeg);
+}
+
+    
+    
+    
+}/* FIN @media (min-width: 400px)*/
+
+
 
 
 
