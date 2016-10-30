@@ -141,7 +141,11 @@ body {
     font-size: 2.2em;
     text-decoration: none;
     color: #fff;
-    font-weight: 100;
+    
+    text-shadow: 3px 3px 3px  rgba(255, 255, 255, 1);
+    background: rgba(0 ,0 ,0 ,.4 );
+    
+    font-weight: 300;
 }
 
 #grid ul li:first-child {
@@ -171,11 +175,11 @@ body {
     transform: scale(1);
 }
 
-#grid ul li:nth-child(3)  { background-image: url(../images/grid3.jpg); }
+#grid ul li:nth-child(3)  { background-image: url(../images/grid7.jpeg); }
 #grid ul li:nth-child(4)  { background-image: url(../images/grid4.jpg); }
-#grid ul li:nth-child(5)  { background-image: url(../images/grid5.jpeg); }
+#grid ul li:nth-child(5)  { background-image: url(../images/codepen.jpg); }
 #grid ul li:nth-child(6)  { background-image: url(../images/grid6.jpg); }
-#grid ul li:nth-child(7)  { background-image: url(../images/grid7.jpeg); }
+#grid ul li:nth-child(7)  { background-image: url(../images/grid3.jpg); }
 #grid ul li:nth-child(8)  { background-image: url(../images/grid8.jpeg); }
 #grid ul li:nth-child(9)  { background-image: url(../images/grid9.jpeg); }
 #grid ul li:nth-child(10) { background-image: url(../images/grid10.jpeg); }  
@@ -230,7 +234,7 @@ body {
     height: 50%;
     top: 0;
     left: 25%;
-    background-image: url(../images/grid3.jpg);
+    background-image: url(../images/grid7.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-size: center;
@@ -241,7 +245,7 @@ body {
     height: 25%;
     top: 0;
     left: 50%;
-    background-image: url(../images/grid4.jpg);
+    background-image: url(../images/grid8.jpeg);
     background-position: center center;
 }
 
@@ -250,7 +254,7 @@ body {
     height: 25%;
     top: 25%;
     left: 50%;
-    background-image: url(../images/grid5.jpeg);
+    background-image: url(../images/codepen.jpg);
 }
 
 #grid ul li:nth-child(6) {
@@ -258,7 +262,7 @@ body {
     height: 25%;
     top: 25%;
     left: 75%;
-    background-image: url(../images/grid6.jpg);
+    background-image: url(../images/github.png);
 }
 
 #grid ul li:nth-child(7) {
@@ -266,7 +270,7 @@ body {
     height: 50%;
     top: 50%;
     left: 0%;
-    background-image: url(../images/grid7.jpeg);
+    background-image: url(../images/grid3.jpg);
 }
 
 #grid ul li:nth-child(8) {
@@ -274,7 +278,7 @@ body {
     height: 25%;
     top: 50%;
     left: 25%;
-    background-image: url(../images/grid8.jpeg);
+    background-image: url(../images/grid4.jpg);
 }
 
 #grid ul li:nth-child(9) {
