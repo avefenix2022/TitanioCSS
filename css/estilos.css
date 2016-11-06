@@ -183,12 +183,12 @@ body {
 #grid ul li:nth-child(8)  { background-image: url(../images/adatabuy.jpg); }
 #grid ul li:nth-child(9)  { background-image: url(../images/contacto.jpg); }
 #grid ul li:nth-child(10) { background-image: url(../images/desarrollo.jpg); }  
-#grid ul li:last-child    { background-image: url(../images/grid11.jpeg); }
+#grid ul li:last-child    { background-image: url(../images/titaniodigital.jpeg); }
 
 
 
 
-/* Larger than mobile */
+/* @media (min-width: 400px) Mayor que movil */
 @media (min-width: 400px) {
    
 #grid ul {
@@ -202,32 +202,17 @@ body {
     background-position: center;
 }
 
-#grid ul li:first-child  { width: 25%; height: 25%; top:   0; left:   0; background-image: url(../images/rReturn_arrow.png); }
-#grid ul li:nth-child(2) { width: 25%; height: 25%; top: 25%; left:   0; background-image: url(../images/cv.jpg); }
-#grid ul li:nth-child(3) { width: 25%; height: 50%; top:   0; left: 25%; background-image: url(../images/guiacss.jpeg); }
-#grid ul li:nth-child(4) { width: 50%; height: 25%; top:   0; left: 50%; background-image: url(../images/marcadohtml.jpeg); }
-#grid ul li:nth-child(5) { width: 25%; height: 25%; top: 25%; left: 50%; background-image: url(../images/codepen.jpg); }
-#grid ul li:nth-child(6) { width: 25%; height: 25%; top: 25%; left: 75%; background-image: url(../images/github.png); }
-#grid ul li:nth-child(7) { width: 25%; height: 50%; top: 50%; left:  0%; background-image: url(../images/divulgacion.jpeg); }
-#grid ul li:nth-child(8) { width: 50%; height: 25%; top: 50%; left: 25%; background-image: url(../images/adatabuy.jpg); }
-#grid ul li:nth-child(9) { width: 25%; height: 25%; top: 75%; left: 25%; background-image: url(../images/contacto.jpg); }
-    
-
-#grid ul li:nth-child(10) {
-    width: 25%;
-    height: 25%;
-    top: 50%;
-    left: 75%;
-    background-image: url(../images/desarrollo.jpg);
-}
-        
-#grid ul li:last-child {
-    width: 50%;
-    height: 25%;
-    top: 75%;
-    left: 50%;
-    background-image: url(../images/grid11.jpeg);
-}
+#grid ul li:first-child   { width: 25%; height: 25%; top:   0; left:   0; background-image: url(../images/rReturn_arrow.png); }
+#grid ul li:nth-child(2)  { width: 25%; height: 25%; top: 25%; left:   0; background-image: url(../images/cv.jpg); }
+#grid ul li:nth-child(3)  { width: 25%; height: 50%; top:   0; left: 25%; background-image: url(../images/guiacss.jpeg); }
+#grid ul li:nth-child(4)  { width: 50%; height: 25%; top:   0; left: 50%; background-image: url(../images/marcadohtml.jpeg); }
+#grid ul li:nth-child(5)  { width: 25%; height: 25%; top: 25%; left: 50%; background-image: url(../images/codepen.jpg); }
+#grid ul li:nth-child(6)  { width: 25%; height: 25%; top: 25%; left: 75%; background-image: url(../images/github.png); }
+#grid ul li:nth-child(7)  { width: 25%; height: 50%; top: 50%; left:  0%; background-image: url(../images/divulgacion.jpeg); }
+#grid ul li:nth-child(8)  { width: 50%; height: 25%; top: 50%; left: 25%; background-image: url(../images/adatabuy.jpg); }
+#grid ul li:nth-child(9)  { width: 25%; height: 25%; top: 75%; left: 25%; background-image: url(../images/contacto.jpg); }
+#grid ul li:nth-child(10) { width: 25%; height: 25%; top: 50%; left: 75%; background-image: url(../images/desarrollo.jpg);}      
+#grid ul li:last-child    { width: 50%; height: 25%; top: 75%; left: 50%; background-image: url(../images/titaniodigital.jpeg); }
 
 #grid ul li:nth-child(2) {   
     transform: scale(.5);
@@ -237,14 +222,9 @@ body {
 #cover:target + #grid ul li:nth-child(2) {
     transform: scale(1);
 }
-    
+       
+
 }/* FIN @media (min-width: 400px)*/
-
-
-
-
-
-
 
 
 
