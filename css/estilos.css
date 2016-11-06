@@ -180,7 +180,7 @@ body {
 #grid ul li:nth-child(5)  { background-image: url(../images/codepen.jpg); }
 #grid ul li:nth-child(6)  { background-image: url(../images/github.png); }
 #grid ul li:nth-child(7)  { background-image: url(../images/divulgacion.jpeg); }
-#grid ul li:nth-child(8)  { background-image: url(../images/grid8.jpeg); }
+#grid ul li:nth-child(8)  { background-image: url(../images/adatabuy.jpg); }
 #grid ul li:nth-child(9)  { background-image: url(../images/contacto.jpg); }
 #grid ul li:nth-child(10) { background-image: url(../images/desarrollo.jpg); }  
 #grid ul li:last-child    { background-image: url(../images/grid11.jpeg); }
@@ -209,22 +209,8 @@ body {
 #grid ul li:nth-child(5) { width: 25%; height: 25%; top: 25%; left: 50%; background-image: url(../images/codepen.jpg); }
 #grid ul li:nth-child(6) { width: 25%; height: 25%; top: 25%; left: 75%; background-image: url(../images/github.png); }
 #grid ul li:nth-child(7) { width: 25%; height: 50%; top: 50%; left:  0%; background-image: url(../images/divulgacion.jpeg); }
-
-#grid ul li:nth-child(8) {
-    width: 50%;
-    height: 25%;
-    top: 50%;
-    left: 25%;
-    background-image: url(../images/grid4.jpg);
-}
-
-#grid ul li:nth-child(9) {
-    width: 25%;
-    height: 25%;
-    top: 75%;
-    left: 25%;
-    background-image: url(../images/contacto.jpg);
-}
+#grid ul li:nth-child(8) { width: 50%; height: 25%; top: 50%; left: 25%; background-image: url(../images/adatabuy.jpg); }
+#grid ul li:nth-child(9) { width: 25%; height: 25%; top: 75%; left: 25%; background-image: url(../images/contacto.jpg); }
     
 
 #grid ul li:nth-child(10) {
