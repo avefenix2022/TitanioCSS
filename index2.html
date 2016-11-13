@@ -124,27 +124,24 @@
 #grid ul li:nth-child(3):target a.uno{
     visibility: hidden;
     width: 0;
+    
+    outline: 1px solid blue;
 }
 #grid ul li:nth-child(3):target a.dos{
     position: absolute;
     visibility: visible;
     width: 100%;
+    top: 0; 
+    /* left: 25%;*/
     
     
-    top: 0;
-    left: 25%;
     
+    outline: 1px solid blue;
     
-    outline: 1px solid red;
+    line-height: 100%;
 }
 
 #grid ul li:nth-child(3):target a.dos::before {
-    position: absolute;
-    
-    
-    top: 0;
-    left: 25%;
-    
     content: "Ir a _";
 }      
       
