@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
 
@@ -21,6 +21,19 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  
+    <style>
+    
+    /*
+    1. Elementos
+    */
+    
+    /* 1. Elementos */
+        .termino {
+            font-weight: 700;
+        }
+    
+    </style>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -42,23 +55,23 @@
         <img src="img/css.jpg" alt="">
         
         <dl>
-            <dt>Regla</dt>
+            <dt class="termino">Regla</dt>
             <dd>Cada uno de los estilos que componen una hoja de estilos CSS. Cada regla está compuesta de una parte de "selectores", un símbolo de "llave de apertura" ({), otra parte denominada "declaración" y por último, un símbolo de "llave de cierre" (}).</dd>
         </dl>
         <dl>
-            <dt>Selector</dt>
+            <dt class="termino">Selector</dt>
             <dd>Indica el elemento o elementos HTML a los que se aplica la regla CSS.</dd>
         </dl>
         <dl>
-            <dt>Declaración</dt>
+            <dt class="termino">Declaración</dt>
             <dd>Especifica los estilos que se aplican a los elementos. Está compuesta por una o más propiedades CSS.</dd>
         </dl>
         <dl>
-            <dt>Propiedad</dt>
+            <dt class="termino">Propiedad</dt>
             <dd>Característica que se modifica en el elemento seleccionado, como por ejemplo su tamaño de letra, su color de fondo, etc.</dd>
         </dl>
         <dl>
-            <dt>Valor</dt>
+            <dt class="termino">Valor</dt>
             <dd>Establece el nuevo valor de la característica modificada en el elemento.</dd>
         </dl>
         
@@ -67,46 +80,47 @@
         
         <h2>Unidades</h2>
         
-        <p>Todas las medidas se indican como un valor numérico entero o decimal (indicado con punto) seguido de una unidad de medida (sin ningún espacio en blanco entre el número y la unidad de medida). </p>
-        <p>Las unidades van pegadas al número.</p>
-        <p>Si el valor es 0, la unidad de medida es opcional. 0 funciona como alternativa a 0px. Pero con rotaciones se debe de especificar el sistema de unidades transform: rotate(0deg) ya que transform: rotate(0) no funciona.</p>
-        <p>Si el valor es distinto a 0 y no se indica ninguna unidad, la medida se ignora completamente.</p>
-        <p>Para algunas propiedades CSS, se permiten longitudes negativas.</p>
-        <p>Si el valor decimal de una medida es inferior a 1, se puede omitir el 0 de la izquierda (0.5em es equivalente a .5em).</p>
+        <p>Todas las medidas se indican como <strong>un valor numérico entero o decimal (indicado con punto) seguido de una unidad de medida</strong>.</p>
+        <p>Las <strong>unidades van pegadas al número</strong> (sin ningún espacio en blanco entre el número y la unidad de medida).</p>
+        <p><strong>Si el valor es 0, la unidad de medida es opcional</strong>. 0 funciona como alternativa a 0px. Pero con rotaciones se debe de especificar el sistema de unidades, por ejemplo transform: rotate(0deg) ya que transform: rotate(0) no funciona.</p>
+        <p><strong>Si el valor es distinto a 0 y no se indica ninguna unidad, la medida se ignora completamente</strong>.</p>
+        <p>Para algunas propiedades CSS, <strong>se permiten longitudes negativas</strong>.</p>
+        <p><strong>Si el valor decimal de una medida es inferior a 1, se puede omitir el 0 de la izquierda</strong> (0.5em es equivalente a .5em).</p>
         <p>Hay dos tipos de unidades de longitud: relativa y absoluta.</p>
         
         <h3>Unidades relativas</h3>
         <dl>
-            <dt>em</dt>
-            <dd>Relativo al valor font-size del elemento (la anchura en px de la letra mayúscula M), en un navegador, por defecto, 1em es equivalente a 16px.</dd>
+            <dt class="termino">em</dt>
+            <dd>Relativo al valor font-size del elemento (la anchura en px de la letra mayúscula M), en un navegador, por defecto, <strong>1em es equivalente a 16px</strong>.</dd>
             
-            <dt>ex</dt>
+            <dt class="termino">ex</dt>
             <dd>Relativo la altura de la x de la fuente del elemento. En fuentes que incluyen la letra 'x', es generalmente la altura de letras minúsculas en la fuente; 1ex es equivalente a 0.5em, 8px.</dd>
             
-            <dt>ch</dt>
+            <dt class="termino">ch</dt>
             <dd>Relativo a la anchura del 0 (cero).</dd>
             
-            <dt>rem</dt>
+            <dt class="termino">rem</dt>
             <dd>Esta unidad representa el tamaño (font-size) del elemento raíz (p.ej. el tamaño de fuente del elemento html). Cuando se aplica a font-size del elemento raíz, representa su valor inicial. Esta unidad es práctica para crear interfaces perfectamente escalables.</dd>
             
-            <dt>vw</dt>
+            <dt class="termino">vw</dt>
             <dd>% de la anchura del viewport.</dd>
             
-            <dt>vh</dt>
+            <dt class="termino">vh</dt>
             <dd>% de la altura del viewport.</dd>
             
-            <dt>vmin</dt>
+            <dt class="termino">vmin</dt>
             <dd>% del valor mínimo entre la altura y anchura del viewport.</dd>
             
-            <dt>vmax</dt>
+            <dt class="termino">vmax</dt>
             <dd>% del valor máximo entre la altura y anchura del viewport</dd>
             
-            <dt>%</dt>
+            <dt class="termino">%</dt>
             <dd>% relativo al contenedor del elemento</dd>
         </dl>
         
-        <p>Los navegadores toman por defecto el tamaño de 16 pixeles. 16 pixeles equivalen a 12 puntos</p>
-        <p>NOTA: El font-size global predeterminado de Bootstrap 3 es 14px, con una altura de línea line-height de 1.428. Esto se aplica al body y a todos los párrafos (para Bootstrap 4 es de 16px).</p>
+        <p><strong>Los navegadores toman por defecto un tamaño de fuente de 16 pixeles</strong>.</p> 
+        <p><strong>16 pixeles equivalen a 12 puntos</strong>.</p>
+        <p>NOTA: El font-size global predeterminado de <strong>Bootstrap 3 es 14px, con una altura de línea line-height de 1.428</strong>. Esto se aplica al body y a todos los párrafos (para <strong>Bootstrap 4 es de 16px</strong>).</p>
         
         
         
